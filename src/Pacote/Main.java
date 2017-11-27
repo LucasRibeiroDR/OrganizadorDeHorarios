@@ -1060,8 +1060,6 @@ public class Main {
                 }
             }
         }
-        
-        
         System.out.println("teste");
     }
 
@@ -1072,6 +1070,434 @@ public class Main {
                 matrizHorarioSegundoAno[i][j] = "Horario Livre";
             }
         }
+        
+        for (i = 0; i < calculoII.getAulasSemanais(); i++) {
+            sucesso = false;
+            while (sucesso == false) {
+                randomHorario = 0 + random.nextInt(8);
+                randomDia = 0 + random.nextInt(5);
+                while (matrizHorarioSegundoAno[randomHorario][randomDia] == "Horário Livre") {
+                    if (randomDia == 0) {
+                        if (maisa.horariosLecionadosSegunda.contains(randomHorario) || maisa.getHorasLecionadasSegunda() >= 8) {
+
+                        } else {
+                            matrizHorarioSegundoAno[randomHorario][randomDia] = "Calculo II / Maisa";
+                            maisa.horariosLecionadosSegunda.add(randomHorario);
+                            maisa.setHorasLecionadasSegunda((float) (maisa.getHorasLecionadasSegunda()+0.83));
+                            sucesso = true;
+                        }
+                    }
+                    if (randomDia == 1) {
+                        if (maisa.horariosLecionadosTerca.contains(randomHorario)|| maisa.getHorasLecionadasTerca() >= 8) {
+
+                        } else {
+                            matrizHorarioSegundoAno[randomHorario][randomDia] = "Calculo II / Maisa";
+                            maisa.horariosLecionadosTerca.add(randomHorario);
+                            maisa.setHorasLecionadasTerca((float) (maisa.getHorasLecionadasTerca()+0.83));
+                            sucesso = true;
+                        }
+
+                    }
+                    if (randomDia == 2) {
+                        if (maisa.horariosLecionadosQuarta.contains(randomHorario)|| maisa.getHorasLecionadasQuarta() >= 8) {
+
+                        } else {
+                            matrizHorarioSegundoAno[randomHorario][randomDia] = "Calculo II / Maisa";
+                            maisa.horariosLecionadosQuarta.add(randomHorario);
+                            maisa.setHorasLecionadasQuarta((float) (maisa.getHorasLecionadasQuarta()+0.83));
+                            sucesso = true;
+                        }
+                    }
+                    if (randomDia == 3) {
+                        if (maisa.horariosLecionadosQuinta.contains(randomHorario)|| maisa.getHorasLecionadasQuinta() >= 8) {
+
+                        } else {
+                            matrizHorarioSegundoAno[randomHorario][randomDia] = "Calculo II / Maisa";
+                            maisa.horariosLecionadosQuinta.add(randomHorario);
+                            maisa.setHorasLecionadasQuinta((float) (maisa.getHorasLecionadasQuinta()+0.83));
+                            sucesso = true;
+                        }
+                    }
+                    if (randomDia == 4) {
+                        if (maisa.horariosLecionadosSexta.contains(randomHorario)|| maisa.getHorasLecionadasSexta() >= 8) {
+
+                        } else {
+                            matrizHorarioSegundoAno[randomHorario][randomDia] = "Calculo II / Maisa";
+                            maisa.horariosLecionadosSexta.add(randomHorario);
+                            maisa.setHorasLecionadasSegunda((float) (maisa.getHorasLecionadasSexta()+0.83));
+                            sucesso = true;
+                        }
+                    }
+                }
+            }
+        }
+        
+        for (i = 0; i < estruturaDeDados.getAulasSemanais(); i++) {
+            sucesso = false;
+            while (sucesso == false) {
+                randomHorario = 0 + random.nextInt(8);
+                randomDia = 0 + random.nextInt(5);
+                while (matrizHorarioSegundoAno[randomHorario][randomDia] == "Horário Livre") {
+                    if (randomDia == 0) {
+                        if (tamara.horariosLecionadosSegunda.contains(randomHorario) || tamara.getHorasLecionadasSegunda() >= 8) {
+
+                        } else {
+                            matrizHorarioSegundoAno[randomHorario][randomDia] = "Estrutura de Dados / Tamara";
+                            tamara.horariosLecionadosSegunda.add(randomHorario);
+                            tamara.setHorasLecionadasSegunda((float) (tamara.getHorasLecionadasSegunda()+0.83));
+                            sucesso = true;
+                        }
+                    }
+                    if (randomDia == 1) {
+                        if (tamara.horariosLecionadosTerca.contains(randomHorario)|| tamara.getHorasLecionadasTerca() >= 8) {
+
+                        } else {
+                            matrizHorarioSegundoAno[randomHorario][randomDia] = "Estrutura de Dados / Tamara";
+                            tamara.horariosLecionadosTerca.add(randomHorario);
+                            tamara.setHorasLecionadasTerca((float) (tamara.getHorasLecionadasTerca()+0.83));
+                            sucesso = true;
+                        }
+
+                    }
+                    if (randomDia == 2) {
+                        if (tamara.horariosLecionadosQuarta.contains(randomHorario)|| tamara.getHorasLecionadasQuarta() >= 8) {
+
+                        } else {
+                            matrizHorarioSegundoAno[randomHorario][randomDia] = "Estrutura de Dados / Tamara";
+                            tamara.horariosLecionadosQuarta.add(randomHorario);
+                            tamara.setHorasLecionadasQuarta((float) (tamara.getHorasLecionadasQuarta()+0.83));
+                            sucesso = true;
+                        }
+                    }
+                    if (randomDia == 3) {
+                        if (tamara.horariosLecionadosQuinta.contains(randomHorario)|| tamara.getHorasLecionadasQuinta() >= 8) {
+
+                        } else {
+                            matrizHorarioSegundoAno[randomHorario][randomDia] = "Estrutura de Dados / Tamara";
+                            tamara.horariosLecionadosQuinta.add(randomHorario);
+                            tamara.setHorasLecionadasQuinta((float) (tamara.getHorasLecionadasQuinta()+0.83));
+                            sucesso = true;
+                        }
+                    }
+                    if (randomDia == 4) {
+                        if (tamara.horariosLecionadosSexta.contains(randomHorario)|| tamara.getHorasLecionadasSexta() >= 8) {
+
+                        } else {
+                            matrizHorarioSegundoAno[randomHorario][randomDia] = "Estrutura de Dados / Tamara";
+                            tamara.horariosLecionadosSexta.add(randomHorario);
+                            tamara.setHorasLecionadasSegunda((float) (tamara.getHorasLecionadasSexta()+0.83));
+                            sucesso = true;
+                        }
+                    }
+                }
+            }
+        }
+        
+         for (i = 0; i < metodologiaPesquisa.getAulasSemanais(); i++) {
+            sucesso = false;
+            while (sucesso == false) {
+                randomHorario = 0 + random.nextInt(8);
+                randomDia = 0 + random.nextInt(5);
+                while (matrizHorarioSegundoAno[randomHorario][randomDia] == "Horário Livre") {
+                    if (randomDia == 0) {
+                        if (tamara.horariosLecionadosSegunda.contains(randomHorario) || tamara.getHorasLecionadasSegunda() >= 8) {
+
+                        } else {
+                            matrizHorarioSegundoAno[randomHorario][randomDia] = "Metodologia E Pesquisa / Tamara";
+                            tamara.horariosLecionadosSegunda.add(randomHorario);
+                            tamara.setHorasLecionadasSegunda((float) (tamara.getHorasLecionadasSegunda()+0.83));
+                            sucesso = true;
+                        }
+                    }
+                    if (randomDia == 1) {
+                        if (tamara.horariosLecionadosTerca.contains(randomHorario)|| tamara.getHorasLecionadasTerca() >= 8) {
+
+                        } else {
+                            matrizHorarioSegundoAno[randomHorario][randomDia] = "Metodologia E Pesquisa / Tamara";
+                            tamara.horariosLecionadosTerca.add(randomHorario);
+                            tamara.setHorasLecionadasTerca((float) (tamara.getHorasLecionadasTerca()+0.83));
+                            sucesso = true;
+                        }
+
+                    }
+                    if (randomDia == 2) {
+                        if (tamara.horariosLecionadosQuarta.contains(randomHorario)|| tamara.getHorasLecionadasQuarta() >= 8) {
+
+                        } else {
+                            matrizHorarioSegundoAno[randomHorario][randomDia] = "Metodologia E Pesquisa / Tamara";
+                            tamara.horariosLecionadosQuarta.add(randomHorario);
+                            tamara.setHorasLecionadasQuarta((float) (tamara.getHorasLecionadasQuarta()+0.83));
+                            sucesso = true;
+                        }
+                    }
+                    if (randomDia == 3) {
+                        if (tamara.horariosLecionadosQuinta.contains(randomHorario)|| tamara.getHorasLecionadasQuinta() >= 8) {
+
+                        } else {
+                            matrizHorarioSegundoAno[randomHorario][randomDia] = "Metodologia E Pesquisa / Tamara";
+                            tamara.horariosLecionadosQuinta.add(randomHorario);
+                            tamara.setHorasLecionadasQuinta((float) (tamara.getHorasLecionadasQuinta()+0.83));
+                            sucesso = true;
+                        }
+                    }
+                    if (randomDia == 4) {
+                        if (tamara.horariosLecionadosSexta.contains(randomHorario)|| tamara.getHorasLecionadasSexta() >= 8) {
+
+                        } else {
+                            matrizHorarioSegundoAno[randomHorario][randomDia] = "Metodologia E Pesquisa / Tamara";
+                            tamara.horariosLecionadosSexta.add(randomHorario);
+                            tamara.setHorasLecionadasSegunda((float) (tamara.getHorasLecionadasSexta()+0.83));
+                            sucesso = true;
+                        }
+                    }
+                }
+            }
+        }
+         
+        for (i = 0; i < fisica.getAulasSemanais(); i++) {
+            sucesso = false;
+            while (sucesso == false) {
+                randomHorario = 0 + random.nextInt(8);
+                randomDia = 0 + random.nextInt(5);
+                while (matrizHorarioSegundoAno[randomHorario][randomDia] == "Horário Livre") {
+                    if (randomDia == 0) {
+                        if (marcioHasegawa.horariosLecionadosSegunda.contains(randomHorario) || marcioHasegawa.getHorasLecionadasSegunda() >= 8) {
+
+                        } else {
+                            matrizHorarioSegundoAno[randomHorario][randomDia] = "Física / Marcio Hasegawa";
+                            marcioHasegawa.horariosLecionadosSegunda.add(randomHorario);
+                            marcioHasegawa.setHorasLecionadasSegunda((float) (marcioHasegawa.getHorasLecionadasSegunda()+0.83));
+                            sucesso = true;
+                        }
+                    }
+                    if (randomDia == 1) {
+                        if (marcioHasegawa.horariosLecionadosTerca.contains(randomHorario)|| marcioHasegawa.getHorasLecionadasTerca() >= 8) {
+
+                        } else {
+                            matrizHorarioSegundoAno[randomHorario][randomDia] = "Física / Marcio Hasegawa";
+                            marcioHasegawa.horariosLecionadosTerca.add(randomHorario);
+                            marcioHasegawa.setHorasLecionadasTerca((float) (marcioHasegawa.getHorasLecionadasTerca()+0.83));
+                            sucesso = true;
+                        }
+
+                    }
+                    if (randomDia == 2) {
+                        if (marcioHasegawa.horariosLecionadosQuarta.contains(randomHorario)|| marcioHasegawa.getHorasLecionadasQuarta() >= 8) {
+
+                        } else {
+                            matrizHorarioSegundoAno[randomHorario][randomDia] = "Física / Marcio Hasegawa";
+                            marcioHasegawa.horariosLecionadosQuarta.add(randomHorario);
+                            marcioHasegawa.setHorasLecionadasQuarta((float) (marcioHasegawa.getHorasLecionadasQuarta()+0.83));
+                            sucesso = true;
+                        }
+                    }
+                    if (randomDia == 3) {
+                        if (marcioHasegawa.horariosLecionadosQuinta.contains(randomHorario)|| marcioHasegawa.getHorasLecionadasQuinta() >= 8) {
+
+                        } else {
+                            matrizHorarioSegundoAno[randomHorario][randomDia] = "Física / Marcio Hasegawa";
+                            marcioHasegawa.horariosLecionadosQuinta.add(randomHorario);
+                            marcioHasegawa.setHorasLecionadasQuinta((float) (marcioHasegawa.getHorasLecionadasQuinta()+0.83));
+                            sucesso = true;
+                        }
+                    }
+                    if (randomDia == 4) {
+                        if (marcioHasegawa.horariosLecionadosSexta.contains(randomHorario)|| marcioHasegawa.getHorasLecionadasSexta() >= 8) {
+
+                        } else {
+                            matrizHorarioSegundoAno[randomHorario][randomDia] = "Física / Marcio Hasegawa";
+                            marcioHasegawa.horariosLecionadosSexta.add(randomHorario);
+                            marcioHasegawa.setHorasLecionadasSegunda((float) (marcioHasegawa.getHorasLecionadasSexta()+0.83));
+                            sucesso = true;
+                        }
+                    }
+                }
+            }
+        }
+        
+//        for (i = 0; i < algebra.getAulasSemanais(); i++) {
+//            sucesso = false;
+//            while (sucesso == false) {
+//                randomHorario = 0 + random.nextInt(8);
+//                randomDia = 0 + random.nextInt(5);
+//                while (matrizHorarioSegundoAno[randomHorario][randomDia] == "Horário Livre") {
+//                    if (randomDia == 0) {
+//                        if (marcioHasegawa.horariosLecionadosSegunda.contains(randomHorario) || marcioHasegawa.getHorasLecionadasSegunda() >= 8) {
+//
+//                        } else {
+//                            matrizHorarioSegundoAno[randomHorario][randomDia] = "Física / Marcio Hasegawa";
+//                            marcioHasegawa.horariosLecionadosSegunda.add(randomHorario);
+//                            marcioHasegawa.setHorasLecionadasSegunda((float) (marcioHasegawa.getHorasLecionadasSegunda()+0.83));
+//                            sucesso = true;
+//                        }
+//                    }
+//                    if (randomDia == 1) {
+//                        if (marcioHasegawa.horariosLecionadosTerca.contains(randomHorario)|| marcioHasegawa.getHorasLecionadasTerca() >= 8) {
+//
+//                        } else {
+//                            matrizHorarioSegundoAno[randomHorario][randomDia] = "Física / Marcio Hasegawa";
+//                            marcioHasegawa.horariosLecionadosTerca.add(randomHorario);
+//                            marcioHasegawa.setHorasLecionadasTerca((float) (marcioHasegawa.getHorasLecionadasTerca()+0.83));
+//                            sucesso = true;
+//                        }
+//
+//                    }
+//                    if (randomDia == 2) {
+//                        if (marcioHasegawa.horariosLecionadosQuarta.contains(randomHorario)|| marcioHasegawa.getHorasLecionadasQuarta() >= 8) {
+//
+//                        } else {
+//                            matrizHorarioSegundoAno[randomHorario][randomDia] = "Física / Marcio Hasegawa";
+//                            marcioHasegawa.horariosLecionadosQuarta.add(randomHorario);
+//                            marcioHasegawa.setHorasLecionadasQuarta((float) (marcioHasegawa.getHorasLecionadasQuarta()+0.83));
+//                            sucesso = true;
+//                        }
+//                    }
+//                    if (randomDia == 3) {
+//                        if (marcioHasegawa.horariosLecionadosQuinta.contains(randomHorario)|| marcioHasegawa.getHorasLecionadasQuinta() >= 8) {
+//
+//                        } else {
+//                            matrizHorarioSegundoAno[randomHorario][randomDia] = "Física / Marcio Hasegawa";
+//                            marcioHasegawa.horariosLecionadosQuinta.add(randomHorario);
+//                            marcioHasegawa.setHorasLecionadasQuinta((float) (marcioHasegawa.getHorasLecionadasQuinta()+0.83));
+//                            sucesso = true;
+//                        }
+//                    }
+//                    if (randomDia == 4) {
+//                        if (marcioHasegawa.horariosLecionadosSexta.contains(randomHorario)|| marcioHasegawa.getHorasLecionadasSexta() >= 8) {
+//
+//                        } else {
+//                            matrizHorarioSegundoAno[randomHorario][randomDia] = "Física / Marcio Hasegawa";
+//                            marcioHasegawa.horariosLecionadosSexta.add(randomHorario);
+//                            marcioHasegawa.setHorasLecionadasSegunda((float) (marcioHasegawa.getHorasLecionadasSexta()+0.83));
+//                            sucesso = true;
+//                        }
+//                    }
+//                }
+//            }
+//        }
+
+        for (i = 0; i < probEEst.getAulasSemanais(); i++) {
+            sucesso = false;
+            while (sucesso == false) {
+                randomHorario = 0 + random.nextInt(8);
+                randomDia = 0 + random.nextInt(5);
+                while (matrizHorarioSegundoAno[randomHorario][randomDia] == "Horário Livre") {
+                    if (randomDia == 0) {
+                        if (luizRenato.horariosLecionadosSegunda.contains(randomHorario) || luizRenato.getHorasLecionadasSegunda() >= 8) {
+
+                        } else {
+                            matrizHorarioSegundoAno[randomHorario][randomDia] = "Probabilidade E Estatística / Luiz Renato";
+                            luizRenato.horariosLecionadosSegunda.add(randomHorario);
+                            luizRenato.setHorasLecionadasSegunda((float) (luizRenato.getHorasLecionadasSegunda()+0.83));
+                            sucesso = true;
+                        }
+                    }
+                    if (randomDia == 1) {
+                        if (luizRenato.horariosLecionadosTerca.contains(randomHorario)|| luizRenato.getHorasLecionadasTerca() >= 8) {
+
+                        } else {
+                            matrizHorarioSegundoAno[randomHorario][randomDia] = "Probabilidade E Estatística / Luiz Renato";
+                            luizRenato.horariosLecionadosTerca.add(randomHorario);
+                            luizRenato.setHorasLecionadasTerca((float) (luizRenato.getHorasLecionadasTerca()+0.83));
+                            sucesso = true;
+                        }
+
+                    }
+                    if (randomDia == 2) {
+                        if (luizRenato.horariosLecionadosQuarta.contains(randomHorario)|| luizRenato.getHorasLecionadasQuarta() >= 8) {
+
+                        } else {
+                            matrizHorarioSegundoAno[randomHorario][randomDia] = "Probabilidade E Estatística / Luiz Renato";
+                            luizRenato.horariosLecionadosQuarta.add(randomHorario);
+                            luizRenato.setHorasLecionadasQuarta((float) (luizRenato.getHorasLecionadasQuarta()+0.83));
+                            sucesso = true;
+                        }
+                    }
+                    if (randomDia == 3) {
+                        if (luizRenato.horariosLecionadosQuinta.contains(randomHorario)|| luizRenato.getHorasLecionadasQuinta() >= 8) {
+
+                        } else {
+                            matrizHorarioSegundoAno[randomHorario][randomDia] = "Probabilidade E Estatística / Luiz Renato";
+                            luizRenato.horariosLecionadosQuinta.add(randomHorario);
+                            luizRenato.setHorasLecionadasQuinta((float) (luizRenato.getHorasLecionadasQuinta()+0.83));
+                            sucesso = true;
+                        }
+                    }
+                    if (randomDia == 4) {
+                        if (luizRenato.horariosLecionadosSexta.contains(randomHorario)|| luizRenato.getHorasLecionadasSexta() >= 8) {
+
+                        } else {
+                            matrizHorarioSegundoAno[randomHorario][randomDia] = "Probabilidade E Estatística / Luiz Renato";
+                            luizRenato.horariosLecionadosSexta.add(randomHorario);
+                            luizRenato.setHorasLecionadasSegunda((float) (luizRenato.getHorasLecionadasSexta()+0.83));
+                            sucesso = true;
+                        }
+                    }
+                }
+            }
+        }
+        
+        for (i = 0; i < comp.getAulasSemanais(); i++) {
+            sucesso = false;
+            while (sucesso == false) {
+                randomHorario = 0 + random.nextInt(8);
+                randomDia = 0 + random.nextInt(5);
+                while (matrizHorarioSegundoAno[randomHorario][randomDia] == "Horário Livre") {
+                    if (randomDia == 0) {
+                        if (wellington.horariosLecionadosSegunda.contains(randomHorario) || wellington.getHorasLecionadasSegunda() >= 8) {
+
+                        } else {
+                            matrizHorarioSegundoAno[randomHorario][randomDia] = "Compiladores / Wellington Dellamura";
+                            wellington.horariosLecionadosSegunda.add(randomHorario);
+                            wellington.setHorasLecionadasSegunda((float) (wellington.getHorasLecionadasSegunda()+0.83));
+                            sucesso = true;
+                        }
+                    }
+                    if (randomDia == 1) {
+                        if (wellington.horariosLecionadosTerca.contains(randomHorario)|| wellington.getHorasLecionadasTerca() >= 8) {
+
+                        } else {
+                            matrizHorarioSegundoAno[randomHorario][randomDia] = "Compiladores / Wellington Dellamura";
+                            wellington.horariosLecionadosTerca.add(randomHorario);
+                            wellington.setHorasLecionadasTerca((float) (wellington.getHorasLecionadasTerca()+0.83));
+                            sucesso = true;
+                        }
+
+                    }
+                    if (randomDia == 2) {
+                        if (wellington.horariosLecionadosQuarta.contains(randomHorario)|| wellington.getHorasLecionadasQuarta() >= 8) {
+
+                        } else {
+                            matrizHorarioSegundoAno[randomHorario][randomDia] = "Compiladores / Wellington Dellamura";
+                            wellington.horariosLecionadosQuarta.add(randomHorario);
+                            wellington.setHorasLecionadasQuarta((float) (wellington.getHorasLecionadasQuarta()+0.83));
+                            sucesso = true;
+                        }
+                    }
+                    if (randomDia == 3) {
+                        if (wellington.horariosLecionadosQuinta.contains(randomHorario)|| wellington.getHorasLecionadasQuinta() >= 8) {
+
+                        } else {
+                            matrizHorarioSegundoAno[randomHorario][randomDia] = "Compiladores / Wellington Dellamura";
+                            wellington.horariosLecionadosQuinta.add(randomHorario);
+                            wellington.setHorasLecionadasQuinta((float) (wellington.getHorasLecionadasQuinta()+0.83));
+                            sucesso = true;
+                        }
+                    }
+                    if (randomDia == 4) {
+                        if (wellington.horariosLecionadosSexta.contains(randomHorario)|| wellington.getHorasLecionadasSexta() >= 8) {
+
+                        } else {
+                            matrizHorarioSegundoAno[randomHorario][randomDia] = "Compiladores / Wellington Dellamura";
+                            wellington.horariosLecionadosSexta.add(randomHorario);
+                            wellington.setHorasLecionadasSegunda((float) (wellington.getHorasLecionadasSexta()+0.83));
+                            sucesso = true;
+                        }
+                    }
+                }
+            }
+        }
+        
     }
 
     public void montarHorarioTerceiroAno() {
