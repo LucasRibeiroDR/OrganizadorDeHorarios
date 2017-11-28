@@ -441,9 +441,120 @@ public class Main {
         sexta.setDisciplinaHorario6("Horário Livre");
         sexta.setDisciplinaHorario7("Horário Livre");
         sexta.setDisciplinaHorario8("Horário Livre");
+        
         montarHorarioPrimeiroAno();
+        exibirHorariosPrimeiroAno();
+        montarHorarioSegundoAno();
+        exibirHorariosSegundoAno();
+        montarHorarioTerceiroAno();
+        exibirHorariosTerceiroAno();
+        montarHorarioQuartoAno();
+        exibirHorariosQuartoAno();
+        
+        
+        
     }
-
+    
+    public static void exibirHorariosPrimeiroAno(){
+        System.out.println("Horários Primeiro Ano: ");
+        for(i = 0; i < 5;  i++){
+             if(i == 0){
+                    System.out.println("Horário Segunda");
+                }
+                if(i == 1){
+                    System.out.println("Horário Terça");
+                }
+                if(i == 2){
+                    System.out.println("Horário Quarta");
+                    
+                }
+                if(i == 3){
+                    System.out.println("Horário Quinta");
+                }
+                if(i == 4){
+                    System.out.println("Horário Sexta");
+                }
+            for(j = 0; j < 8; j++){
+                
+            }
+        }
+    }
+    
+    public static void exibirHorariosSegundoAno(){
+        System.out.println("Horários Segundo Ano: ");
+        for(i = 0; i < 5;  i++){
+             if(i == 0){
+                    System.out.println("Horário Segunda");
+                }
+                if(i == 1){
+                    System.out.println("Horário Terça");
+                }
+                if(i == 2){
+                    System.out.println("Horário Quarta");
+                    
+                }
+                if(i == 3){
+                    System.out.println("Horário Quinta");
+                }
+                if(i == 4){
+                    System.out.println("Horário Sexta");
+                }
+            for(j = 0; j < 8; j++){
+               
+            }
+        }
+    }
+    
+    public static void exibirHorariosTerceiroAno(){
+        System.out.println("Horários Terceiro Ano: ");
+        for(i = 0; i < 5;  i++){
+            if(i == 0){
+                    System.out.println("Horário Segunda");
+                }
+                if(i == 1){
+                    System.out.println("Horário Terça");
+                }
+                if(i == 2){
+                    System.out.println("Horário Quarta");
+                    
+                }
+                if(i == 3){
+                    System.out.println("Horário Quinta");
+                }
+                if(i == 4){
+                    System.out.println("Horário Sexta");
+                }
+            for(j = 0; j < 8; j++){
+                
+            }
+        }
+    }
+    
+    public static void exibirHorariosQuartoAno(){
+        System.out.println("Horários Quarto Ano: ");
+        for(i = 0; i < 5;  i++){
+            if(i == 0){
+                    System.out.println("Horário Segunda");
+                }
+                if(i == 1){
+                    System.out.println("Horário Terça");
+                }
+                if(i == 2){
+                    System.out.println("Horário Quarta");
+                    
+                }
+                if(i == 3){
+                    System.out.println("Horário Quinta");
+                }
+                if(i == 4){
+                    System.out.println("Horário Sexta");
+                }
+            for(j = 0; j < 8; j++){
+                
+            }
+        }
+    }
+    
     public static void montarHorarioPrimeiroAno() {
         String matrizHorarioPrimeiroAno[][] = new String[8][5];
         for (i = 0; i < 8; i++) {
@@ -1064,7 +1175,7 @@ public class Main {
         System.out.println("teste");
     }
 
-    public void montarHorarioSegundoAno() {
+    public static void montarHorarioSegundoAno() {
         String matrizHorarioSegundoAno[][] = new String[8][5];
         for (i = 0; i < 8; i++) {
             for (j = 0; j < 5; j++) {
@@ -1684,7 +1795,7 @@ public class Main {
         
     }
 
-    public void montarHorarioTerceiroAno() {
+    public static void montarHorarioTerceiroAno() {
         String matrizHorarioTerceiroAno[][] = new String[8][5];
         for (i = 0; i < 8; i++) {
             for (j = 0; i < 5; i++) {
@@ -2181,7 +2292,7 @@ public class Main {
         }
     }
 
-    public void montarHorarioQuartoAno() {
+    public static void montarHorarioQuartoAno() {
         String matrizHorarioQuartoAno[][] = new String[8][5];
         for (i = 0; i < 8; i++) {
             for (j = 0; i < 5; i++) {
