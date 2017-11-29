@@ -15,9 +15,14 @@ import java.util.Random;
  */
 public class Main {
 
+    public static String matrizHorarioPrimeiroAno[][] = new String[8][5];
+    public static String matrizHorarioSegundoAno[][] = new String[8][5];
+    public static String matrizHorarioTerceiroAno[][] = new String[8][5];
+    public static String matrizHorarioQuartoAno[][] = new String[8][5];
     public static boolean sucesso;
     public static int i, j;
     public static int randomHorario, randomDia;
+    public static int hor=8, dia=5;
     public static Random random = new Random();
     public static DiasDaSemana segunda = new DiasDaSemana();
     public static DiasDaSemana terca = new DiasDaSemana();
@@ -96,10 +101,6 @@ public class Main {
     public static Professor thiago = new Professor();
     public static Professor wellington = new Professor();
     public static Professor caroline = new Professor();
-    
-    public static void iniciar() {
-
-    }
 
     public static void main(String[] args) {
         primeiroAno.pedirQtdAlunos("primeiro");
@@ -444,12 +445,20 @@ public class Main {
         
         montarHorarioPrimeiroAno();
         exibirHorariosPrimeiroAno();
+        System.out.println("=======================================================================================");
+        System.out.println("=======================================================================================");
         montarHorarioSegundoAno();
         exibirHorariosSegundoAno();
+        System.out.println("=======================================================================================");
+        System.out.println("=======================================================================================");
         montarHorarioTerceiroAno();
         exibirHorariosTerceiroAno();
+        System.out.println("=======================================================================================");
+        System.out.println("=======================================================================================");
         montarHorarioQuartoAno();
         exibirHorariosQuartoAno();
+        System.out.println("=======================================================================================");
+        System.out.println("=======================================================================================");
         
         
         
@@ -459,24 +468,38 @@ public class Main {
         System.out.println("Horários Primeiro Ano: ");
         for(i = 0; i < 5;  i++){
              if(i == 0){
-                    System.out.println("Horário Segunda");
+                    System.out.println("\n\nHorário Segunda\n");
+                    for(j = 0; j < 8; j++){
+                        System.out.println(matrizHorarioPrimeiroAno[j][i]);
+                    }
+                    
                 }
                 if(i == 1){
-                    System.out.println("Horário Terça");
+                    System.out.println("\n\nHorário Terça\n");
+                    for(j = 0; j < 8; j++){
+                        System.out.println(matrizHorarioPrimeiroAno[j][i]);
+                    }
                 }
                 if(i == 2){
-                    System.out.println("Horário Quarta");
+                    System.out.println("\n\nHorário Quarta\n");
+                    for(j = 0; j < 8; j++){
+                        System.out.println(matrizHorarioPrimeiroAno[j][i]);
+                    }
                     
                 }
                 if(i == 3){
-                    System.out.println("Horário Quinta");
+                    System.out.println("\n\nHorário Quinta\n");
+                    for(j = 0; j < 8; j++){
+                        System.out.println(matrizHorarioPrimeiroAno[j][i]);
+                    }
                 }
                 if(i == 4){
-                    System.out.println("Horário Sexta");
+                    System.out.println("\n\nHorário Sexta\n");
+                    for(j = 0; j < 8; j++){
+                        System.out.println(matrizHorarioPrimeiroAno[j][i]);
+                    }
                 }
-            for(j = 0; j < 8; j++){
-                
-            }
+            
         }
     }
     
@@ -484,79 +507,121 @@ public class Main {
         System.out.println("Horários Segundo Ano: ");
         for(i = 0; i < 5;  i++){
              if(i == 0){
-                    System.out.println("Horário Segunda");
+                    System.out.println("\n\nHorário Segunda\n");
+                    for(j = 0; j < 8; j++){
+                        System.out.println(matrizHorarioSegundoAno[j][i]);
+                    }
+                    
                 }
                 if(i == 1){
-                    System.out.println("Horário Terça");
+                    System.out.println("\n\nHorário Terça\n");
+                    for(j = 0; j < 8; j++){
+                        System.out.println(matrizHorarioSegundoAno[j][i]);
+                    }
                 }
                 if(i == 2){
-                    System.out.println("Horário Quarta");
+                    System.out.println("\n\nHorário Quarta\n");
+                    for(j = 0; j < 8; j++){
+                        System.out.println(matrizHorarioSegundoAno[j][i]);
+                    }
                     
                 }
                 if(i == 3){
-                    System.out.println("Horário Quinta");
+                    System.out.println("\n\nHorário Quinta\n");
+                    for(j = 0; j < 8; j++){
+                        System.out.println(matrizHorarioSegundoAno[j][i]);
+                    }
                 }
                 if(i == 4){
-                    System.out.println("Horário Sexta");
+                    System.out.println("\n\nHorário Sexta\n");
+                    for(j = 0; j < 8; j++){
+                        System.out.println(matrizHorarioSegundoAno[j][i]);
+                    }
                 }
-            for(j = 0; j < 8; j++){
-               
-            }
+            
         }
     }
     
     public static void exibirHorariosTerceiroAno(){
         System.out.println("Horários Terceiro Ano: ");
         for(i = 0; i < 5;  i++){
-            if(i == 0){
-                    System.out.println("Horário Segunda");
+             if(i == 0){
+                    System.out.println("\n\nHorário Segunda\n");
+                    for(j = 0; j < 8; j++){
+                        System.out.println(matrizHorarioTerceiroAno[j][i]);
+                    }
+                    
                 }
                 if(i == 1){
-                    System.out.println("Horário Terça");
+                    System.out.println("\n\nHorário Terça\n");
+                    for(j = 0; j < 8; j++){
+                        System.out.println(matrizHorarioTerceiroAno[j][i]);
+                    }
                 }
                 if(i == 2){
-                    System.out.println("Horário Quarta");
+                    System.out.println("\n\nHorário Quarta\n");
+                    for(j = 0; j < 8; j++){
+                        System.out.println(matrizHorarioTerceiroAno[j][i]);
+                    }
                     
                 }
                 if(i == 3){
-                    System.out.println("Horário Quinta");
+                    System.out.println("\n\nHorário Quinta\n");
+                    for(j = 0; j < 8; j++){
+                        System.out.println(matrizHorarioTerceiroAno[j][i]);
+                    }
                 }
                 if(i == 4){
-                    System.out.println("Horário Sexta");
+                    System.out.println("\n\nHorário Sexta\n");
+                    for(j = 0; j < 8; j++){
+                        System.out.println(matrizHorarioTerceiroAno[j][i]);
+                    }
                 }
-            for(j = 0; j < 8; j++){
-                
-            }
+            
         }
     }
     
     public static void exibirHorariosQuartoAno(){
         System.out.println("Horários Quarto Ano: ");
         for(i = 0; i < 5;  i++){
-            if(i == 0){
-                    System.out.println("Horário Segunda");
+             if(i == 0){
+                    System.out.println("\n\nHorário Segunda\n");
+                    for(j = 0; j < 8; j++){
+                        System.out.println(matrizHorarioQuartoAno[j][i]);
+                    }
+                    
                 }
                 if(i == 1){
-                    System.out.println("Horário Terça");
+                    System.out.println("\n\nHorário Terça\n");
+                    for(j = 0; j < 8; j++){
+                        System.out.println(matrizHorarioQuartoAno[j][i]);
+                    }
                 }
                 if(i == 2){
-                    System.out.println("Horário Quarta");
+                    System.out.println("\n\nHorário Quarta\n");
+                    for(j = 0; j < 8; j++){
+                        System.out.println(matrizHorarioQuartoAno[j][i]);
+                    }
                     
                 }
                 if(i == 3){
-                    System.out.println("Horário Quinta");
+                    System.out.println("\n\nHorário Quinta\n");
+                    for(j = 0; j < 8; j++){
+                        System.out.println(matrizHorarioQuartoAno[j][i]);
+                    }
                 }
                 if(i == 4){
-                    System.out.println("Horário Sexta");
+                    System.out.println("\n\nHorário Sexta\n");
+                    for(j = 0; j < 8; j++){
+                        System.out.println(matrizHorarioQuartoAno[j][i]);
+                    }
                 }
-            for(j = 0; j < 8; j++){
-                
-            }
+            
         }
     }
     
     public static void montarHorarioPrimeiroAno() {
-        String matrizHorarioPrimeiroAno[][] = new String[8][5];
+        
         for (i = 0; i < 8; i++) {
             for (j = 0; j < 5; j++) {
                 matrizHorarioPrimeiroAno[i][j] = "Horário Livre";
@@ -565,13 +630,18 @@ public class Main {
         
         for (i = 0; i < calculoI.getAulasSemanais(); i++) {
             sucesso = false;
+            randomHorario = 0 + random.nextInt(hor);
+            randomDia = 0 + random.nextInt(dia);  
             while (sucesso == false) {
-                randomHorario = 0 + random.nextInt(8);
-                randomDia = 0 + random.nextInt(5);
+                do{
+                    randomHorario = 0 + random.nextInt(hor);
+                    randomDia = 0 + random.nextInt(dia);  
+                }while((randomHorario<0 || randomHorario >7)||(randomDia<0 || randomDia >4));
                 while (matrizHorarioPrimeiroAno[randomHorario][randomDia] == "Horário Livre") {
                     if (randomDia == 0) {
                         if (maisa.horariosLecionadosSegunda.contains(randomHorario) || maisa.getHorasLecionadasSegunda() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioPrimeiroAno[randomHorario][randomDia] = "Calculo I / Maisa";
                             maisa.horariosLecionadosSegunda.add(randomHorario);
@@ -581,6 +651,8 @@ public class Main {
                     }
                     if (randomDia == 1) {
                         if (maisa.horariosLecionadosTerca.contains(randomHorario)|| maisa.getHorasLecionadasTerca() >= 8) {
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
 
                         } else {
                             matrizHorarioPrimeiroAno[randomHorario][randomDia] = "Calculo I / Maisa";
@@ -592,6 +664,8 @@ public class Main {
                     }
                     if (randomDia == 2) {
                         if (maisa.horariosLecionadosQuarta.contains(randomHorario)|| maisa.getHorasLecionadasQuarta() >= 8) {
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
 
                         } else {
                             matrizHorarioPrimeiroAno[randomHorario][randomDia] = "Calculo I / Maisa";
@@ -602,6 +676,8 @@ public class Main {
                     }
                     if (randomDia == 3) {
                         if (maisa.horariosLecionadosQuinta.contains(randomHorario)|| maisa.getHorasLecionadasQuinta() >= 8) {
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
 
                         } else {
                             matrizHorarioPrimeiroAno[randomHorario][randomDia] = "Calculo I / Maisa";
@@ -612,7 +688,8 @@ public class Main {
                     }
                     if (randomDia == 4) {
                         if (maisa.horariosLecionadosSexta.contains(randomHorario)|| maisa.getHorasLecionadasSexta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioPrimeiroAno[randomHorario][randomDia] = "Calculo I / Maisa";
                             maisa.horariosLecionadosSexta.add(randomHorario);
@@ -626,13 +703,18 @@ public class Main {
         
         for (i = 0; i < teoriaEPratica.getAulasSemanais(); i++) {
             sucesso = false;
+            randomHorario = 0 + random.nextInt(hor);
+            randomDia = 0 + random.nextInt(dia);
             while (sucesso == false) {
-                randomHorario = 0 + random.nextInt(8);
-                randomDia = 0 + random.nextInt(5);
+                do{
+                    randomHorario = 0 + random.nextInt(hor);
+                    randomDia = 0 + random.nextInt(dia);  
+                }while((randomHorario<0 || randomHorario >7)||(randomDia<0 || randomDia >4));
                 while (matrizHorarioPrimeiroAno[randomHorario][randomDia] == "Horário Livre") {
                     if (randomDia == 0) {
                         if (thiago.horariosLecionadosSegunda.contains(randomHorario) || thiago.getHorasLecionadasSegunda() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioPrimeiroAno[randomHorario][randomDia] = "Teoria e Prática de S.I. / Thiago Coleti";
                             thiago.horariosLecionadosSegunda.add(randomHorario);
@@ -642,7 +724,8 @@ public class Main {
                     }
                     if (randomDia == 1) {
                         if (thiago.horariosLecionadosTerca.contains(randomHorario)|| thiago.getHorasLecionadasTerca() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioPrimeiroAno[randomHorario][randomDia] = "Teoria e Prática de S.I. / Thiago Coleti";
                             thiago.horariosLecionadosTerca.add(randomHorario);
@@ -653,7 +736,8 @@ public class Main {
                     }
                     if (randomDia == 2) {
                         if (thiago.horariosLecionadosQuarta.contains(randomHorario)|| thiago.getHorasLecionadasQuarta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioPrimeiroAno[randomHorario][randomDia] = "Teoria e Prática de S.I. / Thiago Coleti";
                             thiago.horariosLecionadosQuarta.add(randomHorario);
@@ -663,7 +747,8 @@ public class Main {
                     }
                     if (randomDia == 3) {
                         if (thiago.horariosLecionadosQuinta.contains(randomHorario)|| thiago.getHorasLecionadasQuinta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioPrimeiroAno[randomHorario][randomDia] = "Teoria e Prática de S.I. / Thiago Coleti";
                             thiago.horariosLecionadosTerca.add(randomHorario);
@@ -673,7 +758,8 @@ public class Main {
                     }
                     if (randomDia == 4) {
                         if (thiago.horariosLecionadosSexta.contains(randomHorario)|| thiago.getHorasLecionadasSexta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioPrimeiroAno[randomHorario][randomDia] = "Teoria e Prática de S.I. / Thiago Coleti";
                             thiago.horariosLecionadosSexta.add(randomHorario);
@@ -687,13 +773,18 @@ public class Main {
         
         for (i = 0; i < matematicaDiscreta.getAulasSemanais(); i++) {
             sucesso = false;
+            randomHorario = 0 + random.nextInt(hor);
+            randomDia = 0 + random.nextInt(dia);
             while (sucesso == false) {
-                randomHorario = 0 + random.nextInt(8);
-                randomDia = 0 + random.nextInt(5);
+                do{
+                    randomHorario = 0 + random.nextInt(hor);
+                    randomDia = 0 + random.nextInt(dia);  
+                }while((randomHorario<0 || randomHorario >7)||(randomDia<0 || randomDia >4));
                 while (matrizHorarioPrimeiroAno[randomHorario][randomDia] == "Horário Livre") {
                     if (randomDia == 0) {
                         if (luizFernando.horariosLecionadosSegunda.contains(randomHorario) || luizFernando.getHorasLecionadasSegunda() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioPrimeiroAno[randomHorario][randomDia] = "Matemática Discreta e Lógica Matemática / Luiz Fernando Legore do Nascimento";
                             luizFernando.horariosLecionadosSegunda.add(randomHorario);
@@ -703,7 +794,8 @@ public class Main {
                     }
                     if (randomDia == 1) {
                         if (luizFernando.horariosLecionadosTerca.contains(randomHorario)|| luizFernando.getHorasLecionadasTerca() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioPrimeiroAno[randomHorario][randomDia] = "Matemática Discreta e Lógica Matemática / Luiz Fernando Legore do Nascimento	";
                             luizFernando.horariosLecionadosTerca.add(randomHorario);
@@ -714,7 +806,8 @@ public class Main {
                     }
                     if (randomDia == 2) {
                         if (luizFernando.horariosLecionadosQuarta.contains(randomHorario)|| luizFernando.getHorasLecionadasQuarta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioPrimeiroAno[randomHorario][randomDia] = "Matemática Discreta e Lógica Matemática / Luiz Fernando Legore do Nascimento	";
                             luizFernando.horariosLecionadosQuarta.add(randomHorario);
@@ -724,7 +817,8 @@ public class Main {
                     }
                     if (randomDia == 3) {
                         if (luizFernando.horariosLecionadosQuinta.contains(randomHorario)|| luizFernando.getHorasLecionadasQuinta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioPrimeiroAno[randomHorario][randomDia] = "Matemática Discreta e Lógica Matemática / Luiz Fernando Legore do Nascimento	";
                             luizFernando.horariosLecionadosTerca.add(randomHorario);
@@ -734,7 +828,8 @@ public class Main {
                     }
                     if (randomDia == 4) {
                         if (luizFernando.horariosLecionadosSexta.contains(randomHorario)|| luizFernando.getHorasLecionadasSexta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioPrimeiroAno[randomHorario][randomDia] = "Matemática Discreta e Lógica Matemática / Luiz Fernando Legore do Nascimento	";
                             luizFernando.horariosLecionadosSexta.add(randomHorario);
@@ -748,13 +843,18 @@ public class Main {
         
         for (i = 0; i < progI.getAulasSemanais(); i++) {
             sucesso = false;
+            randomHorario = 0 + random.nextInt(hor);
+            randomDia = 0 + random.nextInt(dia);
             while (sucesso == false) {
-                randomHorario = 0 + random.nextInt(8);
-                randomDia = 0 + random.nextInt(5);
+                do{
+                    randomHorario = 0 + random.nextInt(hor);
+                    randomDia = 0 + random.nextInt(dia);  
+                }while((randomHorario<0 || randomHorario >7)||(randomDia<0 || randomDia >4));
                 while (matrizHorarioPrimeiroAno[randomHorario][randomDia] == "Horário Livre") {
                     if (randomDia == 0) {
                         if (joseMerlin.horariosLecionadosSegunda.contains(randomHorario) || joseMerlin.getHorasLecionadasSegunda() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioPrimeiroAno[randomHorario][randomDia] = "Programação I / José Reinaldo Merlin";
                             joseMerlin.horariosLecionadosSegunda.add(randomHorario);
@@ -764,7 +864,8 @@ public class Main {
                     }
                     if (randomDia == 1) {
                         if (joseMerlin.horariosLecionadosTerca.contains(randomHorario)|| joseMerlin.getHorasLecionadasTerca() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioPrimeiroAno[randomHorario][randomDia] = "Programação I / José Reinaldo Merlin	";
                             joseMerlin.horariosLecionadosTerca.add(randomHorario);
@@ -775,7 +876,8 @@ public class Main {
                     }
                     if (randomDia == 2) {
                         if (joseMerlin.horariosLecionadosQuarta.contains(randomHorario)|| joseMerlin.getHorasLecionadasQuarta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioPrimeiroAno[randomHorario][randomDia] = "Programação I / José Reinaldo Merlin	";
                             joseMerlin.horariosLecionadosQuarta.add(randomHorario);
@@ -785,7 +887,8 @@ public class Main {
                     }
                     if (randomDia == 3) {
                         if (joseMerlin.horariosLecionadosQuinta.contains(randomHorario)|| joseMerlin.getHorasLecionadasQuinta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioPrimeiroAno[randomHorario][randomDia] = "Programação I / José Reinaldo Merlin	";
                             joseMerlin.horariosLecionadosTerca.add(randomHorario);
@@ -795,7 +898,8 @@ public class Main {
                     }
                     if (randomDia == 4) {
                         if (joseMerlin.horariosLecionadosSexta.contains(randomHorario)|| joseMerlin.getHorasLecionadasSexta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioPrimeiroAno[randomHorario][randomDia] = "Programação I / José Reinaldo Merlin	";
                             joseMerlin.horariosLecionadosSexta.add(randomHorario);
@@ -809,13 +913,18 @@ public class Main {
         
         for (i = 0; i < sociologia.getAulasSemanais(); i++) {
             sucesso = false;
+            randomHorario = 0 + random.nextInt(hor);
+            randomDia = 0 + random.nextInt(dia);
             while (sucesso == false) {
-                randomHorario = 0 + random.nextInt(8);
-                randomDia = 0 + random.nextInt(5);
+                do{
+                    randomHorario = 0 + random.nextInt(hor);
+                    randomDia = 0 + random.nextInt(dia);  
+                }while((randomHorario<0 || randomHorario >7)||(randomDia<0 || randomDia >4));
                 while (matrizHorarioPrimeiroAno[randomHorario][randomDia] == "Horário Livre") {
                     if (randomDia == 0) {
                         if (cristiane.horariosLecionadosSegunda.contains(randomHorario) || cristiane.getHorasLecionadasSegunda() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioPrimeiroAno[randomHorario][randomDia] = "Sociologia / Cristiane Schell Gabriel";
                             cristiane.horariosLecionadosSegunda.add(randomHorario);
@@ -825,7 +934,8 @@ public class Main {
                     }
                     if (randomDia == 1) {
                         if (cristiane.horariosLecionadosTerca.contains(randomHorario)|| cristiane.getHorasLecionadasTerca() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioPrimeiroAno[randomHorario][randomDia] = "Sociologia / Cristiane Schell Gabriel";
                             cristiane.horariosLecionadosTerca.add(randomHorario);
@@ -836,7 +946,8 @@ public class Main {
                     }
                     if (randomDia == 2) {
                         if (cristiane.horariosLecionadosQuarta.contains(randomHorario)|| cristiane.getHorasLecionadasQuarta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioPrimeiroAno[randomHorario][randomDia] = "Sociologia / Cristiane Schell Gabriel";
                             cristiane.horariosLecionadosQuarta.add(randomHorario);
@@ -846,7 +957,8 @@ public class Main {
                     }
                     if (randomDia == 3) {
                         if (cristiane.horariosLecionadosQuinta.contains(randomHorario)|| cristiane.getHorasLecionadasQuinta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioPrimeiroAno[randomHorario][randomDia] = "Sociologia / Cristiane Schell Gabriel";
                             cristiane.horariosLecionadosTerca.add(randomHorario);
@@ -856,7 +968,8 @@ public class Main {
                     }
                     if (randomDia == 4) {
                         if (cristiane.horariosLecionadosSexta.contains(randomHorario)|| cristiane.getHorasLecionadasSexta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioPrimeiroAno[randomHorario][randomDia] = "Sociologia / Cristiane Schell Gabriel";
                             cristiane.horariosLecionadosSexta.add(randomHorario);
@@ -870,13 +983,18 @@ public class Main {
         
         for (i = 0; i < introducaoACC.getAulasSemanais(); i++) {
             sucesso = false;
+            randomHorario = 0 + random.nextInt(hor);
+            randomDia = 0 + random.nextInt(dia);
             while (sucesso == false) {
-                randomHorario = 0 + random.nextInt(8);
-                randomDia = 0 + random.nextInt(5);
+                do{
+                    randomHorario = 0 + random.nextInt(hor);
+                    randomDia = 0 + random.nextInt(dia);  
+                }while((randomHorario<0 || randomHorario >7)||(randomDia<0 || randomDia >4));
                 while (matrizHorarioPrimeiroAno[randomHorario][randomDia] == "Horário Livre") {
                     if (randomDia == 0) {
                         if (ailton.horariosLecionadosSegunda.contains(randomHorario) || ailton.getHorasLecionadasSegunda() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioPrimeiroAno[randomHorario][randomDia] = "Introdução a Ciência da Computação / Ailton Sergio Bonifácio";
                             ailton.horariosLecionadosSegunda.add(randomHorario);
@@ -886,7 +1004,8 @@ public class Main {
                     }
                     if (randomDia == 1) {
                         if (ailton.horariosLecionadosTerca.contains(randomHorario)|| ailton.getHorasLecionadasTerca() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioPrimeiroAno[randomHorario][randomDia] = "Introdução a Ciência da Computação / Ailton Sergio Bonifácio";
                             ailton.horariosLecionadosTerca.add(randomHorario);
@@ -897,7 +1016,8 @@ public class Main {
                     }
                     if (randomDia == 2) {
                         if (ailton.horariosLecionadosQuarta.contains(randomHorario)|| ailton.getHorasLecionadasQuarta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioPrimeiroAno[randomHorario][randomDia] = "Introdução a Ciência da Computação / Ailton Sergio Bonifácio";
                             ailton.horariosLecionadosQuarta.add(randomHorario);
@@ -907,7 +1027,8 @@ public class Main {
                     }
                     if (randomDia == 3) {
                         if (ailton.horariosLecionadosQuinta.contains(randomHorario)|| ailton.getHorasLecionadasQuinta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioPrimeiroAno[randomHorario][randomDia] = "Introdução a Ciência da Computação / Ailton Sergio Bonifácio";
                             ailton.horariosLecionadosTerca.add(randomHorario);
@@ -917,7 +1038,8 @@ public class Main {
                     }
                     if (randomDia == 4) {
                         if (ailton.horariosLecionadosSexta.contains(randomHorario)|| ailton.getHorasLecionadasSexta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioPrimeiroAno[randomHorario][randomDia] = "Introdução a Ciência da Computação / Ailton Sergio Bonifácio";
                             ailton.horariosLecionadosSexta.add(randomHorario);
@@ -931,13 +1053,18 @@ public class Main {
         
         for (i = 0; i < adm.getAulasSemanais(); i++) {
             sucesso = false;
+            randomHorario = 0 + random.nextInt(hor);
+            randomDia = 0 + random.nextInt(dia);
             while (sucesso == false) {
-                randomHorario = 0 + random.nextInt(8);
-                randomDia = 0 + random.nextInt(5);
+                do{
+                    randomHorario = 0 + random.nextInt(hor);
+                    randomDia = 0 + random.nextInt(dia);  
+                }while((randomHorario<0 || randomHorario >7)||(randomDia<0 || randomDia >4));
                 while (matrizHorarioPrimeiroAno[randomHorario][randomDia] == "Horário Livre") {
                     if (randomDia == 0) {
                         if (carlosHenrique.horariosLecionadosSegunda.contains(randomHorario) || carlosHenrique.getHorasLecionadasSegunda() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioPrimeiroAno[randomHorario][randomDia] = "Administração / Carlos Henrique Machado";
                             carlosHenrique.horariosLecionadosSegunda.add(randomHorario);
@@ -947,7 +1074,8 @@ public class Main {
                     }
                     if (randomDia == 1) {
                         if (carlosHenrique.horariosLecionadosTerca.contains(randomHorario)|| carlosHenrique.getHorasLecionadasTerca() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioPrimeiroAno[randomHorario][randomDia] = "Administração / Carlos Henrique Machado";
                             carlosHenrique.horariosLecionadosTerca.add(randomHorario);
@@ -958,7 +1086,8 @@ public class Main {
                     }
                     if (randomDia == 2) {
                         if (carlosHenrique.horariosLecionadosQuarta.contains(randomHorario)|| carlosHenrique.getHorasLecionadasQuarta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioPrimeiroAno[randomHorario][randomDia] = "Administração / Carlos Henrique Machado";
                             carlosHenrique.horariosLecionadosQuarta.add(randomHorario);
@@ -968,7 +1097,8 @@ public class Main {
                     }
                     if (randomDia == 3) {
                         if (carlosHenrique.horariosLecionadosQuinta.contains(randomHorario)|| carlosHenrique.getHorasLecionadasQuinta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioPrimeiroAno[randomHorario][randomDia] = "Administração / Carlos Henrique Machado";
                             carlosHenrique.horariosLecionadosTerca.add(randomHorario);
@@ -978,7 +1108,8 @@ public class Main {
                     }
                     if (randomDia == 4) {
                         if (carlosHenrique.horariosLecionadosSexta.contains(randomHorario)|| carlosHenrique.getHorasLecionadasSexta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioPrimeiroAno[randomHorario][randomDia] = "Administração / Carlos Henrique Machado";
                             carlosHenrique.horariosLecionadosSexta.add(randomHorario);
@@ -992,13 +1123,18 @@ public class Main {
         
         for (i = 0; i < compESoci.getAulasSemanais(); i++) {
             sucesso = false;
+            randomHorario = 0 + random.nextInt(hor);
+            randomDia = 0 + random.nextInt(dia);
             while (sucesso == false) {
-                randomHorario = 0 + random.nextInt(8);
-                randomDia = 0 + random.nextInt(5);
+                do{
+                    randomHorario = 0 + random.nextInt(hor);
+                    randomDia = 0 + random.nextInt(dia);  
+                }while((randomHorario<0 || randomHorario >7)||(randomDia<0 || randomDia >4));
                 while (matrizHorarioPrimeiroAno[randomHorario][randomDia] == "Horário Livre") {
                     if (randomDia == 0) {
                         if (carlosEduardo.horariosLecionadosSegunda.contains(randomHorario) || carlosEduardo.getHorasLecionadasSegunda() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioPrimeiroAno[randomHorario][randomDia] = "Computadores e Sociedade / Carlos Eduardo Ribeiro";
                             carlosEduardo.horariosLecionadosSegunda.add(randomHorario);
@@ -1008,7 +1144,8 @@ public class Main {
                     }
                     if (randomDia == 1) {
                         if (carlosEduardo.horariosLecionadosTerca.contains(randomHorario)|| carlosEduardo.getHorasLecionadasTerca() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioPrimeiroAno[randomHorario][randomDia] = "Computadores e Sociedade / Carlos Eduardo Ribeiro";
                             carlosEduardo.horariosLecionadosTerca.add(randomHorario);
@@ -1019,7 +1156,8 @@ public class Main {
                     }
                     if (randomDia == 2) {
                         if (carlosEduardo.horariosLecionadosQuarta.contains(randomHorario)|| carlosEduardo.getHorasLecionadasQuarta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioPrimeiroAno[randomHorario][randomDia] = "Computadores e Sociedade / Carlos Eduardo Ribeiro";
                             carlosEduardo.horariosLecionadosQuarta.add(randomHorario);
@@ -1029,7 +1167,8 @@ public class Main {
                     }
                     if (randomDia == 3) {
                         if (carlosHenrique.horariosLecionadosQuinta.contains(randomHorario)|| carlosEduardo.getHorasLecionadasQuinta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioPrimeiroAno[randomHorario][randomDia] = "Computadores e Sociedade / Carlos Eduardo Ribeiro";
                             carlosEduardo.horariosLecionadosTerca.add(randomHorario);
@@ -1039,7 +1178,8 @@ public class Main {
                     }
                     if (randomDia == 4) {
                         if (carlosEduardo.horariosLecionadosSexta.contains(randomHorario)|| carlosEduardo.getHorasLecionadasSexta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioPrimeiroAno[randomHorario][randomDia] = "Computadores e Sociedade / Carlos Eduardo Ribeiro";
                             carlosEduardo.horariosLecionadosSexta.add(randomHorario);
@@ -1053,13 +1193,18 @@ public class Main {
         
         for (i = 0; i < comunic.getAulasSemanais(); i++) {
             sucesso = false;
+            randomHorario = 0 + random.nextInt(hor);
+            randomDia = 0 + random.nextInt(dia);
             while (sucesso == false) {
-                randomHorario = 0 + random.nextInt(8);
-                randomDia = 0 + random.nextInt(5);
+                do{
+                    randomHorario = 0 + random.nextInt(hor);
+                    randomDia = 0 + random.nextInt(dia);  
+                }while((randomHorario<0 || randomHorario >7)||(randomDia<0 || randomDia >4));
                 while (matrizHorarioPrimeiroAno[randomHorario][randomDia] == "Horário Livre") {
                     if (randomDia == 0) {
                         if (maisa.horariosLecionadosSegunda.contains(randomHorario) || maisa.getHorasLecionadasSegunda() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioPrimeiroAno[randomHorario][randomDia] = "Comunicação e Expressão / Maisa";
                             maisa.horariosLecionadosSegunda.add(randomHorario);
@@ -1069,7 +1214,8 @@ public class Main {
                     }
                     if (randomDia == 1) {
                         if (maisa.horariosLecionadosTerca.contains(randomHorario)|| maisa.getHorasLecionadasTerca() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioPrimeiroAno[randomHorario][randomDia] = "Comunicação e Expressão / Maisa";
                             maisa.horariosLecionadosTerca.add(randomHorario);
@@ -1080,7 +1226,8 @@ public class Main {
                     }
                     if (randomDia == 2) {
                         if (maisa.horariosLecionadosQuarta.contains(randomHorario)|| maisa.getHorasLecionadasQuarta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioPrimeiroAno[randomHorario][randomDia] = "Comunicação e Expressão / Maisa";
                             maisa.horariosLecionadosQuarta.add(randomHorario);
@@ -1090,7 +1237,8 @@ public class Main {
                     }
                     if (randomDia == 3) {
                         if (maisa.horariosLecionadosQuinta.contains(randomHorario)|| maisa.getHorasLecionadasQuinta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioPrimeiroAno[randomHorario][randomDia] = "Comunicação e Expressão / Maisa";
                             maisa.horariosLecionadosQuinta.add(randomHorario);
@@ -1100,7 +1248,8 @@ public class Main {
                     }
                     if (randomDia == 4) {
                         if (maisa.horariosLecionadosSexta.contains(randomHorario)|| maisa.getHorasLecionadasSexta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioPrimeiroAno[randomHorario][randomDia] = "Comunicação e Expressão / Maisa";
                             maisa.horariosLecionadosSexta.add(randomHorario);
@@ -1114,13 +1263,18 @@ public class Main {
         
         for (i = 0; i < sistemasDigitais.getAulasSemanais(); i++) {
             sucesso = false;
+            randomHorario = 0 + random.nextInt(hor);
+            randomDia = 0 + random.nextInt(dia);
             while (sucesso == false) {
-                randomHorario = 0 + random.nextInt(8);
-                randomDia = 0 + random.nextInt(5);
+                do{
+                    randomHorario = 0 + random.nextInt(hor);
+                    randomDia = 0 + random.nextInt(dia);  
+                }while((randomHorario<0 || randomHorario >7)||(randomDia<0 || randomDia >4));
                 while (matrizHorarioPrimeiroAno[randomHorario][randomDia] == "Horário Livre") {
                     if (randomDia == 0) {
                         if (mauricio.horariosLecionadosSegunda.contains(randomHorario) || mauricio.getHorasLecionadasSegunda() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioPrimeiroAno[randomHorario][randomDia] = "Sistemas Digitais / Mauricio Massaru Arimoto";
                             mauricio.horariosLecionadosSegunda.add(randomHorario);
@@ -1130,7 +1284,8 @@ public class Main {
                     }
                     if (randomDia == 1) {
                         if (mauricio.horariosLecionadosTerca.contains(randomHorario)|| mauricio.getHorasLecionadasTerca() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioPrimeiroAno[randomHorario][randomDia] = "Sistemas Digitais / Mauricio Massaru Arimoto";
                             mauricio.horariosLecionadosTerca.add(randomHorario);
@@ -1141,7 +1296,8 @@ public class Main {
                     }
                     if (randomDia == 2) {
                         if (mauricio.horariosLecionadosQuarta.contains(randomHorario)|| mauricio.getHorasLecionadasQuarta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioPrimeiroAno[randomHorario][randomDia] = "Sistemas Digitais / Mauricio Massaru Arimoto";
                             mauricio.horariosLecionadosQuarta.add(randomHorario);
@@ -1151,7 +1307,8 @@ public class Main {
                     }
                     if (randomDia == 3) {
                         if (mauricio.horariosLecionadosQuinta.contains(randomHorario)|| mauricio.getHorasLecionadasQuinta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioPrimeiroAno[randomHorario][randomDia] = "Sistemas Digitais / Mauricio Massaru Arimoto";
                             mauricio.horariosLecionadosQuinta.add(randomHorario);
@@ -1161,7 +1318,8 @@ public class Main {
                     }
                     if (randomDia == 4) {
                         if (mauricio.horariosLecionadosSexta.contains(randomHorario)|| mauricio.getHorasLecionadasSexta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioPrimeiroAno[randomHorario][randomDia] = "Sistemas Digitais / Mauricio Massaru Arimoto";
                             mauricio.horariosLecionadosSexta.add(randomHorario);
@@ -1172,27 +1330,36 @@ public class Main {
                 }
             }
         }
-        System.out.println("teste");
     }
 
     public static void montarHorarioSegundoAno() {
-        String matrizHorarioSegundoAno[][] = new String[8][5];
+        
         for (i = 0; i < 8; i++) {
             for (j = 0; j < 5; j++) {
-                matrizHorarioSegundoAno[i][j] = "Horario Livre";
+                
+                matrizHorarioSegundoAno[i][j] = "Horário Livre";
             }
         }
         
         for (i = 0; i < calculoII.getAulasSemanais(); i++) {
+            
             sucesso = false;
+            randomHorario = 0 + random.nextInt(hor);
+            randomDia = 0 + random.nextInt(dia);
             while (sucesso == false) {
-                randomHorario = 0 + random.nextInt(8);
-                randomDia = 0 + random.nextInt(5);
+                do{
+                    randomHorario = 0 + random.nextInt(hor);
+                    randomDia = 0 + random.nextInt(dia);  
+                }while((randomHorario<0 || randomHorario >7)||(randomDia<0 || randomDia >4));
+                
+                
                 while (matrizHorarioSegundoAno[randomHorario][randomDia] == "Horário Livre") {
                     if (randomDia == 0) {
                         if (maisa.horariosLecionadosSegunda.contains(randomHorario) || maisa.getHorasLecionadasSegunda() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
+                            
                             matrizHorarioSegundoAno[randomHorario][randomDia] = "Calculo II / Maisa";
                             maisa.horariosLecionadosSegunda.add(randomHorario);
                             maisa.setHorasLecionadasSegunda((float) (maisa.getHorasLecionadasSegunda()+0.83));
@@ -1201,7 +1368,8 @@ public class Main {
                     }
                     if (randomDia == 1) {
                         if (maisa.horariosLecionadosTerca.contains(randomHorario)|| maisa.getHorasLecionadasTerca() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioSegundoAno[randomHorario][randomDia] = "Calculo II / Maisa";
                             maisa.horariosLecionadosTerca.add(randomHorario);
@@ -1212,7 +1380,8 @@ public class Main {
                     }
                     if (randomDia == 2) {
                         if (maisa.horariosLecionadosQuarta.contains(randomHorario)|| maisa.getHorasLecionadasQuarta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioSegundoAno[randomHorario][randomDia] = "Calculo II / Maisa";
                             maisa.horariosLecionadosQuarta.add(randomHorario);
@@ -1222,17 +1391,20 @@ public class Main {
                     }
                     if (randomDia == 3) {
                         if (maisa.horariosLecionadosQuinta.contains(randomHorario)|| maisa.getHorasLecionadasQuinta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioSegundoAno[randomHorario][randomDia] = "Calculo II / Maisa";
                             maisa.horariosLecionadosQuinta.add(randomHorario);
                             maisa.setHorasLecionadasQuinta((float) (maisa.getHorasLecionadasQuinta()+0.83));
                             sucesso = true;
+                            break;
                         }
                     }
                     if (randomDia == 4) {
                         if (maisa.horariosLecionadosSexta.contains(randomHorario)|| maisa.getHorasLecionadasSexta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioSegundoAno[randomHorario][randomDia] = "Calculo II / Maisa";
                             maisa.horariosLecionadosSexta.add(randomHorario);
@@ -1244,15 +1416,21 @@ public class Main {
             }
         }
         
+        
         for (i = 0; i < estruturaDeDados.getAulasSemanais(); i++) {
             sucesso = false;
+            randomHorario = 0 + random.nextInt(hor);
+            randomDia = 0 + random.nextInt(dia);
             while (sucesso == false) {
-                randomHorario = 0 + random.nextInt(8);
-                randomDia = 0 + random.nextInt(5);
+                do{
+                    randomHorario = 0 + random.nextInt(hor);
+                    randomDia = 0 + random.nextInt(dia);  
+                }while((randomHorario<0 || randomHorario >7) || (randomDia<0 || randomDia >4));
                 while (matrizHorarioSegundoAno[randomHorario][randomDia] == "Horário Livre") {
                     if (randomDia == 0) {
                         if (tamara.horariosLecionadosSegunda.contains(randomHorario) || tamara.getHorasLecionadasSegunda() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioSegundoAno[randomHorario][randomDia] = "Estrutura de Dados / Tamara";
                             tamara.horariosLecionadosSegunda.add(randomHorario);
@@ -1262,7 +1440,8 @@ public class Main {
                     }
                     if (randomDia == 1) {
                         if (tamara.horariosLecionadosTerca.contains(randomHorario)|| tamara.getHorasLecionadasTerca() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioSegundoAno[randomHorario][randomDia] = "Estrutura de Dados / Tamara";
                             tamara.horariosLecionadosTerca.add(randomHorario);
@@ -1273,7 +1452,8 @@ public class Main {
                     }
                     if (randomDia == 2) {
                         if (tamara.horariosLecionadosQuarta.contains(randomHorario)|| tamara.getHorasLecionadasQuarta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioSegundoAno[randomHorario][randomDia] = "Estrutura de Dados / Tamara";
                             tamara.horariosLecionadosQuarta.add(randomHorario);
@@ -1283,7 +1463,8 @@ public class Main {
                     }
                     if (randomDia == 3) {
                         if (tamara.horariosLecionadosQuinta.contains(randomHorario)|| tamara.getHorasLecionadasQuinta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioSegundoAno[randomHorario][randomDia] = "Estrutura de Dados / Tamara";
                             tamara.horariosLecionadosQuinta.add(randomHorario);
@@ -1293,7 +1474,8 @@ public class Main {
                     }
                     if (randomDia == 4) {
                         if (tamara.horariosLecionadosSexta.contains(randomHorario)|| tamara.getHorasLecionadasSexta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioSegundoAno[randomHorario][randomDia] = "Estrutura de Dados / Tamara";
                             tamara.horariosLecionadosSexta.add(randomHorario);
@@ -1307,13 +1489,18 @@ public class Main {
         
          for (i = 0; i < metodologiaPesquisa.getAulasSemanais(); i++) {
             sucesso = false;
+            randomHorario = 0 + random.nextInt(hor);
+            randomDia = 0 + random.nextInt(dia);
             while (sucesso == false) {
-                randomHorario = 0 + random.nextInt(8);
-                randomDia = 0 + random.nextInt(5);
+                do{
+                    randomHorario = 0 + random.nextInt(hor);
+                    randomDia = 0 + random.nextInt(dia);  
+                }while((randomHorario<0 || randomHorario >7)||(randomDia<0 || randomDia >4));
                 while (matrizHorarioSegundoAno[randomHorario][randomDia] == "Horário Livre") {
                     if (randomDia == 0) {
                         if (tamara.horariosLecionadosSegunda.contains(randomHorario) || tamara.getHorasLecionadasSegunda() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioSegundoAno[randomHorario][randomDia] = "Metodologia E Pesquisa / Tamara";
                             tamara.horariosLecionadosSegunda.add(randomHorario);
@@ -1323,7 +1510,8 @@ public class Main {
                     }
                     if (randomDia == 1) {
                         if (tamara.horariosLecionadosTerca.contains(randomHorario)|| tamara.getHorasLecionadasTerca() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioSegundoAno[randomHorario][randomDia] = "Metodologia E Pesquisa / Tamara";
                             tamara.horariosLecionadosTerca.add(randomHorario);
@@ -1334,7 +1522,8 @@ public class Main {
                     }
                     if (randomDia == 2) {
                         if (tamara.horariosLecionadosQuarta.contains(randomHorario)|| tamara.getHorasLecionadasQuarta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioSegundoAno[randomHorario][randomDia] = "Metodologia E Pesquisa / Tamara";
                             tamara.horariosLecionadosQuarta.add(randomHorario);
@@ -1344,7 +1533,8 @@ public class Main {
                     }
                     if (randomDia == 3) {
                         if (tamara.horariosLecionadosQuinta.contains(randomHorario)|| tamara.getHorasLecionadasQuinta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioSegundoAno[randomHorario][randomDia] = "Metodologia E Pesquisa / Tamara";
                             tamara.horariosLecionadosQuinta.add(randomHorario);
@@ -1354,7 +1544,8 @@ public class Main {
                     }
                     if (randomDia == 4) {
                         if (tamara.horariosLecionadosSexta.contains(randomHorario)|| tamara.getHorasLecionadasSexta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioSegundoAno[randomHorario][randomDia] = "Metodologia E Pesquisa / Tamara";
                             tamara.horariosLecionadosSexta.add(randomHorario);
@@ -1368,13 +1559,18 @@ public class Main {
          
         for (i = 0; i < fisica.getAulasSemanais(); i++) {
             sucesso = false;
+            randomHorario = 0 + random.nextInt(hor);
+            randomDia = 0 + random.nextInt(dia);
             while (sucesso == false) {
-                randomHorario = 0 + random.nextInt(8);
-                randomDia = 0 + random.nextInt(5);
+                do{
+                    randomHorario = 0 + random.nextInt(hor);
+                    randomDia = 0 + random.nextInt(dia);  
+                }while((randomHorario<0 || randomHorario >7)||(randomDia<0 || randomDia >4));
                 while (matrizHorarioSegundoAno[randomHorario][randomDia] == "Horário Livre") {
                     if (randomDia == 0) {
                         if (marcioHasegawa.horariosLecionadosSegunda.contains(randomHorario) || marcioHasegawa.getHorasLecionadasSegunda() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioSegundoAno[randomHorario][randomDia] = "Física / Marcio Hasegawa";
                             marcioHasegawa.horariosLecionadosSegunda.add(randomHorario);
@@ -1384,7 +1580,8 @@ public class Main {
                     }
                     if (randomDia == 1) {
                         if (marcioHasegawa.horariosLecionadosTerca.contains(randomHorario)|| marcioHasegawa.getHorasLecionadasTerca() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioSegundoAno[randomHorario][randomDia] = "Física / Marcio Hasegawa";
                             marcioHasegawa.horariosLecionadosTerca.add(randomHorario);
@@ -1395,7 +1592,8 @@ public class Main {
                     }
                     if (randomDia == 2) {
                         if (marcioHasegawa.horariosLecionadosQuarta.contains(randomHorario)|| marcioHasegawa.getHorasLecionadasQuarta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioSegundoAno[randomHorario][randomDia] = "Física / Marcio Hasegawa";
                             marcioHasegawa.horariosLecionadosQuarta.add(randomHorario);
@@ -1405,7 +1603,8 @@ public class Main {
                     }
                     if (randomDia == 3) {
                         if (marcioHasegawa.horariosLecionadosQuinta.contains(randomHorario)|| marcioHasegawa.getHorasLecionadasQuinta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioSegundoAno[randomHorario][randomDia] = "Física / Marcio Hasegawa";
                             marcioHasegawa.horariosLecionadosQuinta.add(randomHorario);
@@ -1415,7 +1614,8 @@ public class Main {
                     }
                     if (randomDia == 4) {
                         if (marcioHasegawa.horariosLecionadosSexta.contains(randomHorario)|| marcioHasegawa.getHorasLecionadasSexta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioSegundoAno[randomHorario][randomDia] = "Física / Marcio Hasegawa";
                             marcioHasegawa.horariosLecionadosSexta.add(randomHorario);
@@ -1429,13 +1629,18 @@ public class Main {
         
         for (i = 0; i < algebra.getAulasSemanais(); i++) {
             sucesso = false;
+            randomHorario = 0 + random.nextInt(hor);
+            randomDia = 0 + random.nextInt(dia);
             while (sucesso == false) {
-                randomHorario = 0 + random.nextInt(8);
-                randomDia = 0 + random.nextInt(5);
+                do{
+                    randomHorario = 0 + random.nextInt(hor);
+                    randomDia = 0 + random.nextInt(dia);  
+                }while((randomHorario<0 || randomHorario >7)||(randomDia<0 || randomDia >4));
                 while (matrizHorarioSegundoAno[randomHorario][randomDia] == "Horário Livre") {
                     if (randomDia == 0) {
                         if (caroline.horariosLecionadosSegunda.contains(randomHorario) || caroline.getHorasLecionadasSegunda() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioSegundoAno[randomHorario][randomDia] = "Caroline / Álgebra Linear";
                             caroline.horariosLecionadosSegunda.add(randomHorario);
@@ -1445,7 +1650,8 @@ public class Main {
                     }
                     if (randomDia == 1) {
                         if (caroline.horariosLecionadosTerca.contains(randomHorario)|| caroline.getHorasLecionadasTerca() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioSegundoAno[randomHorario][randomDia] = "Caroline / Álgebra Linear";
                             caroline.horariosLecionadosTerca.add(randomHorario);
@@ -1456,7 +1662,8 @@ public class Main {
                     }
                     if (randomDia == 2) {
                         if (caroline.horariosLecionadosQuarta.contains(randomHorario)|| caroline.getHorasLecionadasQuarta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioSegundoAno[randomHorario][randomDia] = "Caroline / Álgebra Linear";
                             caroline.horariosLecionadosQuarta.add(randomHorario);
@@ -1466,7 +1673,8 @@ public class Main {
                     }
                     if (randomDia == 3) {
                         if (caroline.horariosLecionadosQuinta.contains(randomHorario)|| caroline.getHorasLecionadasQuinta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioSegundoAno[randomHorario][randomDia] = "Caroline / Álgebra Linear";
                             caroline.horariosLecionadosQuinta.add(randomHorario);
@@ -1476,7 +1684,8 @@ public class Main {
                     }
                     if (randomDia == 4) {
                         if (marcioHasegawa.horariosLecionadosSexta.contains(randomHorario)|| marcioHasegawa.getHorasLecionadasSexta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioSegundoAno[randomHorario][randomDia] = "Caroline / Álgebra Linear";
                             caroline.horariosLecionadosSexta.add(randomHorario);
@@ -1490,13 +1699,18 @@ public class Main {
 
         for (i = 0; i < probEEst.getAulasSemanais(); i++) {
             sucesso = false;
+            randomHorario = 0 + random.nextInt(hor);
+            randomDia = 0 + random.nextInt(dia);
             while (sucesso == false) {
-                randomHorario = 0 + random.nextInt(8);
-                randomDia = 0 + random.nextInt(5);
+                do{
+                    randomHorario = 0 + random.nextInt(hor);
+                    randomDia = 0 + random.nextInt(dia);  
+                }while((randomHorario<0 || randomHorario >7)||(randomDia<0 || randomDia >4));
                 while (matrizHorarioSegundoAno[randomHorario][randomDia] == "Horário Livre") {
                     if (randomDia == 0) {
                         if (luizRenato.horariosLecionadosSegunda.contains(randomHorario) || luizRenato.getHorasLecionadasSegunda() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioSegundoAno[randomHorario][randomDia] = "Probabilidade E Estatística / Luiz Renato";
                             luizRenato.horariosLecionadosSegunda.add(randomHorario);
@@ -1506,7 +1720,8 @@ public class Main {
                     }
                     if (randomDia == 1) {
                         if (luizRenato.horariosLecionadosTerca.contains(randomHorario)|| luizRenato.getHorasLecionadasTerca() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioSegundoAno[randomHorario][randomDia] = "Probabilidade E Estatística / Luiz Renato";
                             luizRenato.horariosLecionadosTerca.add(randomHorario);
@@ -1517,7 +1732,8 @@ public class Main {
                     }
                     if (randomDia == 2) {
                         if (luizRenato.horariosLecionadosQuarta.contains(randomHorario)|| luizRenato.getHorasLecionadasQuarta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioSegundoAno[randomHorario][randomDia] = "Probabilidade E Estatística / Luiz Renato";
                             luizRenato.horariosLecionadosQuarta.add(randomHorario);
@@ -1527,7 +1743,8 @@ public class Main {
                     }
                     if (randomDia == 3) {
                         if (luizRenato.horariosLecionadosQuinta.contains(randomHorario)|| luizRenato.getHorasLecionadasQuinta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioSegundoAno[randomHorario][randomDia] = "Probabilidade E Estatística / Luiz Renato";
                             luizRenato.horariosLecionadosQuinta.add(randomHorario);
@@ -1537,7 +1754,8 @@ public class Main {
                     }
                     if (randomDia == 4) {
                         if (luizRenato.horariosLecionadosSexta.contains(randomHorario)|| luizRenato.getHorasLecionadasSexta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioSegundoAno[randomHorario][randomDia] = "Probabilidade E Estatística / Luiz Renato";
                             luizRenato.horariosLecionadosSexta.add(randomHorario);
@@ -1551,13 +1769,18 @@ public class Main {
         
         for (i = 0; i < teoriaDaComp.getAulasSemanais(); i++) {
             sucesso = false;
+            randomHorario = 0 + random.nextInt(hor);
+            randomDia = 0 + random.nextInt(dia);
             while (sucesso == false) {
-                randomHorario = 0 + random.nextInt(8);
-                randomDia = 0 + random.nextInt(5);
+                do{
+                    randomHorario = 0 + random.nextInt(hor);
+                    randomDia = 0 + random.nextInt(dia);  
+                }while((randomHorario<0 || randomHorario >7)||(randomDia<0 || randomDia >4));
                 while (matrizHorarioSegundoAno[randomHorario][randomDia] == "Horário Livre") {
                     if (randomDia == 0) {
                         if (wellington.horariosLecionadosSegunda.contains(randomHorario) || wellington.getHorasLecionadasSegunda() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioSegundoAno[randomHorario][randomDia] = "Teoria Da Computação / Wellington Dellamura";
                             wellington.horariosLecionadosSegunda.add(randomHorario);
@@ -1567,7 +1790,8 @@ public class Main {
                     }
                     if (randomDia == 1) {
                         if (wellington.horariosLecionadosTerca.contains(randomHorario)|| wellington.getHorasLecionadasTerca() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioSegundoAno[randomHorario][randomDia] = "Teoria Da Computação / Wellington Dellamura";
                             wellington.horariosLecionadosTerca.add(randomHorario);
@@ -1578,7 +1802,8 @@ public class Main {
                     }
                     if (randomDia == 2) {
                         if (wellington.horariosLecionadosQuarta.contains(randomHorario)|| wellington.getHorasLecionadasQuarta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioSegundoAno[randomHorario][randomDia] = "Teoria Da Computação / Wellington Dellamura";
                             wellington.horariosLecionadosQuarta.add(randomHorario);
@@ -1588,7 +1813,8 @@ public class Main {
                     }
                     if (randomDia == 3) {
                         if (wellington.horariosLecionadosQuinta.contains(randomHorario)|| wellington.getHorasLecionadasQuinta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioSegundoAno[randomHorario][randomDia] = "Teoria Da Computação / Wellington Dellamura";
                             wellington.horariosLecionadosQuinta.add(randomHorario);
@@ -1598,7 +1824,8 @@ public class Main {
                     }
                     if (randomDia == 4) {
                         if (wellington.horariosLecionadosSexta.contains(randomHorario)|| wellington.getHorasLecionadasSexta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioSegundoAno[randomHorario][randomDia] = "Teoria Da Computação / Wellington Dellamura";
                             wellington.horariosLecionadosSexta.add(randomHorario);
@@ -1612,13 +1839,18 @@ public class Main {
         
         for (i = 0; i < arqComp.getAulasSemanais(); i++) {
             sucesso = false;
+            randomHorario = 0 + random.nextInt(hor);
+            randomDia = 0 + random.nextInt(dia);
             while (sucesso == false) {
-                randomHorario = 0 + random.nextInt(8);
-                randomDia = 0 + random.nextInt(5);
+                do{
+                    randomHorario = 0 + random.nextInt(hor);
+                    randomDia = 0 + random.nextInt(dia);  
+                }while((randomHorario<0 || randomHorario >7)||(randomDia<0 || randomDia >4));
                 while (matrizHorarioSegundoAno[randomHorario][randomDia] == "Horário Livre") {
                     if (randomDia == 0) {
                         if (thiago.horariosLecionadosSegunda.contains(randomHorario) || thiago.getHorasLecionadasSegunda() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioSegundoAno[randomHorario][randomDia] = "Arquitetura De Computadores / Thiago";
                             thiago.horariosLecionadosSegunda.add(randomHorario);
@@ -1628,7 +1860,8 @@ public class Main {
                     }
                     if (randomDia == 1) {
                         if (thiago.horariosLecionadosTerca.contains(randomHorario)|| thiago.getHorasLecionadasTerca() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioSegundoAno[randomHorario][randomDia] = "Arquitetura De Computadores / Thiago";
                             thiago.horariosLecionadosTerca.add(randomHorario);
@@ -1639,7 +1872,8 @@ public class Main {
                     }
                     if (randomDia == 2) {
                         if (thiago.horariosLecionadosQuarta.contains(randomHorario)|| thiago.getHorasLecionadasQuarta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioSegundoAno[randomHorario][randomDia] = "Arquitetura De Computadores / Thiago";
                             thiago.horariosLecionadosQuarta.add(randomHorario);
@@ -1649,7 +1883,8 @@ public class Main {
                     }
                     if (randomDia == 3) {
                         if (thiago.horariosLecionadosQuinta.contains(randomHorario)|| thiago.getHorasLecionadasQuinta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioSegundoAno[randomHorario][randomDia] = "Arquitetura De Computadores / Thiago";
                             thiago.horariosLecionadosQuinta.add(randomHorario);
@@ -1659,7 +1894,8 @@ public class Main {
                     }
                     if (randomDia == 4) {
                         if (thiago.horariosLecionadosSexta.contains(randomHorario)|| thiago.getHorasLecionadasSexta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioSegundoAno[randomHorario][randomDia] = "Arquitetura De Computadores / Thiago";
                             thiago.horariosLecionadosSexta.add(randomHorario);
@@ -1673,13 +1909,18 @@ public class Main {
         
         for (i = 0; i < progII.getAulasSemanais(); i++) {
             sucesso = false;
+            randomHorario = 0 + random.nextInt(hor);
+            randomDia = 0 + random.nextInt(dia);
             while (sucesso == false) {
-                randomHorario = 0 + random.nextInt(8);
-                randomDia = 0 + random.nextInt(5);
+                do{
+                    randomHorario = 0 + random.nextInt(hor);
+                    randomDia = 0 + random.nextInt(dia);  
+                }while((randomHorario<0 || randomHorario >7)||(randomDia<0 || randomDia >4));
                 while (matrizHorarioSegundoAno[randomHorario][randomDia] == "Horário Livre") {
                     if (randomDia == 0) {
                         if (joseMerlin.horariosLecionadosSegunda.contains(randomHorario) || joseMerlin.getHorasLecionadasSegunda() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioSegundoAno[randomHorario][randomDia] = "Programação II / José Merlin";
                             joseMerlin.horariosLecionadosSegunda.add(randomHorario);
@@ -1689,7 +1930,8 @@ public class Main {
                     }
                     if (randomDia == 1) {
                         if (joseMerlin.horariosLecionadosTerca.contains(randomHorario)|| joseMerlin.getHorasLecionadasTerca() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioSegundoAno[randomHorario][randomDia] = "Programação II / José Merlin";
                             joseMerlin.horariosLecionadosTerca.add(randomHorario);
@@ -1700,7 +1942,8 @@ public class Main {
                     }
                     if (randomDia == 2) {
                         if (joseMerlin.horariosLecionadosQuarta.contains(randomHorario)|| joseMerlin.getHorasLecionadasQuarta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioSegundoAno[randomHorario][randomDia] = "Programação II / José Merlin";
                             joseMerlin.horariosLecionadosQuarta.add(randomHorario);
@@ -1710,7 +1953,8 @@ public class Main {
                     }
                     if (randomDia == 3) {
                         if (joseMerlin.horariosLecionadosQuinta.contains(randomHorario)|| joseMerlin.getHorasLecionadasQuinta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioSegundoAno[randomHorario][randomDia] = "Programação II / José Merlin";
                             joseMerlin.horariosLecionadosQuinta.add(randomHorario);
@@ -1720,7 +1964,8 @@ public class Main {
                     }
                     if (randomDia == 4) {
                         if (joseMerlin.horariosLecionadosSexta.contains(randomHorario)|| joseMerlin.getHorasLecionadasSexta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioSegundoAno[randomHorario][randomDia] = "Programação II / José Merlin";
                             joseMerlin.horariosLecionadosSexta.add(randomHorario);
@@ -1734,15 +1979,20 @@ public class Main {
         
         for (i = 0; i < engSoftI.getAulasSemanais(); i++) {
             sucesso = false;
+            randomHorario = 0 + random.nextInt(hor);
+            randomDia = 0 + random.nextInt(dia);
             while (sucesso == false) {
-                randomHorario = 0 + random.nextInt(8);
-                randomDia = 0 + random.nextInt(5);
+                do{
+                    randomHorario = 0 + random.nextInt(hor);
+                    randomDia = 0 + random.nextInt(dia);  
+                }while((randomHorario<0 || randomHorario >7)||(randomDia<0 || randomDia >4));
                 while (matrizHorarioSegundoAno[randomHorario][randomDia] == "Horário Livre") {
                     if (randomDia == 0) {
                         if (mauricio.horariosLecionadosSegunda.contains(randomHorario) || mauricio.getHorasLecionadasSegunda() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
-                            matrizHorarioSegundoAno[randomHorario][randomDia] = "Engenharia De Software II / Mauricio";
+                            matrizHorarioSegundoAno[randomHorario][randomDia] = "Engenharia De Software I / Mauricio";
                             mauricio.horariosLecionadosSegunda.add(randomHorario);
                             mauricio.setHorasLecionadasSegunda((float) (mauricio.getHorasLecionadasSegunda()+0.83));
                             sucesso = true;
@@ -1750,9 +2000,10 @@ public class Main {
                     }
                     if (randomDia == 1) {
                         if (mauricio.horariosLecionadosTerca.contains(randomHorario)|| mauricio.getHorasLecionadasTerca() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
-                            matrizHorarioSegundoAno[randomHorario][randomDia] = "Engenharia De Software II / Mauricio";
+                            matrizHorarioSegundoAno[randomHorario][randomDia] = "Engenharia De Software I / Mauricio";
                             mauricio.horariosLecionadosTerca.add(randomHorario);
                             mauricio.setHorasLecionadasTerca((float) (mauricio.getHorasLecionadasTerca()+0.83));
                             sucesso = true;
@@ -1761,9 +2012,10 @@ public class Main {
                     }
                     if (randomDia == 2) {
                         if (mauricio.horariosLecionadosQuarta.contains(randomHorario)|| mauricio.getHorasLecionadasQuarta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
-                            matrizHorarioSegundoAno[randomHorario][randomDia] = "Engenharia De Software II / Mauricio";
+                            matrizHorarioSegundoAno[randomHorario][randomDia] = "Engenharia De Software I / Mauricio";
                             mauricio.horariosLecionadosQuarta.add(randomHorario);
                             mauricio.setHorasLecionadasQuarta((float) (mauricio.getHorasLecionadasQuarta()+0.83));
                             sucesso = true;
@@ -1771,9 +2023,10 @@ public class Main {
                     }
                     if (randomDia == 3) {
                         if (mauricio.horariosLecionadosQuinta.contains(randomHorario)|| mauricio.getHorasLecionadasQuinta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
-                            matrizHorarioSegundoAno[randomHorario][randomDia] = "Engenharia De Software II / Mauricio";
+                            matrizHorarioSegundoAno[randomHorario][randomDia] = "Engenharia De Software I / Mauricio";
                             mauricio.horariosLecionadosQuinta.add(randomHorario);
                             mauricio.setHorasLecionadasQuinta((float) (mauricio.getHorasLecionadasQuinta()+0.83));
                             sucesso = true;
@@ -1781,37 +2034,45 @@ public class Main {
                     }
                     if (randomDia == 4) {
                         if (mauricio.horariosLecionadosSexta.contains(randomHorario)|| mauricio.getHorasLecionadasSexta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
-                            matrizHorarioSegundoAno[randomHorario][randomDia] = "Engenharia De Software II / Mauricio";
+                            matrizHorarioSegundoAno[randomHorario][randomDia] = "Engenharia De Software I / Mauricio";
                             mauricio.horariosLecionadosSexta.add(randomHorario);
                             mauricio.setHorasLecionadasSegunda((float) (mauricio.getHorasLecionadasSexta()+0.83));
                             sucesso = true;
                         }
                     }
+                    
                 }
             }
         }
-        
+       
     }
 
     public static void montarHorarioTerceiroAno() {
-        String matrizHorarioTerceiroAno[][] = new String[8][5];
         for (i = 0; i < 8; i++) {
-            for (j = 0; i < 5; i++) {
-                matrizHorarioTerceiroAno[i][j] = "Horario Livre";
+            for (j = 0; j < 5; j++) {
+                matrizHorarioTerceiroAno[i][j] = "Horário Livre";
             }
         }
         
         for (i = 0; i < projEAnalise.getAulasSemanais(); i++) {
+            
             sucesso = false;
+            randomHorario = 0 + random.nextInt(hor);
+            randomDia = 0 + random.nextInt(dia);
             while (sucesso == false) {
-                randomHorario = 0 + random.nextInt(8);
-                randomDia = 0 + random.nextInt(5);
+                do{
+                    randomHorario = 0 + random.nextInt(hor);
+                    randomDia = 0 + random.nextInt(dia);  
+                }while((randomHorario<0 || randomHorario >7)||(randomDia<0 || randomDia >4));
                 while (matrizHorarioTerceiroAno[randomHorario][randomDia] == "Horário Livre") {
+                    
                     if (randomDia == 0) {
                         if (brunoFaical.horariosLecionadosSegunda.contains(randomHorario) || brunoFaical.getHorasLecionadasSegunda() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioTerceiroAno[randomHorario][randomDia] = "Projeto E Analise De Algoritmos / Bruno Faiçal";
                             brunoFaical.horariosLecionadosSegunda.add(randomHorario);
@@ -1821,7 +2082,8 @@ public class Main {
                     }
                     if (randomDia == 1) {
                         if (brunoFaical.horariosLecionadosTerca.contains(randomHorario)|| brunoFaical.getHorasLecionadasTerca() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioTerceiroAno[randomHorario][randomDia] = "Projeto E Analise De Algoritmos / Bruno Faiçal";
                             brunoFaical.horariosLecionadosTerca.add(randomHorario);
@@ -1832,7 +2094,8 @@ public class Main {
                     }
                     if (randomDia == 2) {
                         if (brunoFaical.horariosLecionadosQuarta.contains(randomHorario)|| brunoFaical.getHorasLecionadasQuarta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioTerceiroAno[randomHorario][randomDia] = "Projeto E Analise De Algoritmos / Bruno Faiçal";
                             brunoFaical.horariosLecionadosQuarta.add(randomHorario);
@@ -1842,7 +2105,8 @@ public class Main {
                     }
                     if (randomDia == 3) {
                         if (brunoFaical.horariosLecionadosQuinta.contains(randomHorario)|| brunoFaical.getHorasLecionadasQuinta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioTerceiroAno[randomHorario][randomDia] = "Projeto E Analise De Algoritmos / Bruno Faiçal";
                             brunoFaical.horariosLecionadosQuinta.add(randomHorario);
@@ -1852,7 +2116,8 @@ public class Main {
                     }
                     if (randomDia == 4) {
                         if (brunoFaical.horariosLecionadosSexta.contains(randomHorario)|| brunoFaical.getHorasLecionadasSexta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioTerceiroAno[randomHorario][randomDia] = "Projeto E Analise De Algoritmos / Bruno Faiçal";
                             brunoFaical.horariosLecionadosSexta.add(randomHorario);
@@ -1866,13 +2131,18 @@ public class Main {
         
         for (i = 0; i < sO.getAulasSemanais(); i++) {
             sucesso = false;
+            randomHorario = 0 + random.nextInt(hor);
+            randomDia = 0 + random.nextInt(dia);
             while (sucesso == false) {
-                randomHorario = 0 + random.nextInt(8);
-                randomDia = 0 + random.nextInt(5);
+                do{
+                    randomHorario = 0 + random.nextInt(hor);
+                    randomDia = 0 + random.nextInt(dia);  
+                }while((randomHorario<0 || randomHorario >7)||(randomDia<0 || randomDia >4));
                 while (matrizHorarioTerceiroAno[randomHorario][randomDia] == "Horário Livre") {
                     if (randomDia == 0) {
                         if (thiago.horariosLecionadosSegunda.contains(randomHorario) || thiago.getHorasLecionadasSegunda() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioTerceiroAno[randomHorario][randomDia] = "Sistemas Operacionais / Thiago";
                             thiago.horariosLecionadosSegunda.add(randomHorario);
@@ -1882,7 +2152,8 @@ public class Main {
                     }
                     if (randomDia == 1) {
                         if (thiago.horariosLecionadosTerca.contains(randomHorario)|| thiago.getHorasLecionadasTerca() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioTerceiroAno[randomHorario][randomDia] = "Sistemas Operacionais / Thiago";
                             thiago.horariosLecionadosTerca.add(randomHorario);
@@ -1893,7 +2164,8 @@ public class Main {
                     }
                     if (randomDia == 2) {
                         if (thiago.horariosLecionadosQuarta.contains(randomHorario)|| thiago.getHorasLecionadasQuarta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioTerceiroAno[randomHorario][randomDia] = "Sistemas Operacionais / Thiago";
                             thiago.horariosLecionadosQuarta.add(randomHorario);
@@ -1903,7 +2175,8 @@ public class Main {
                     }
                     if (randomDia == 3) {
                         if (thiago.horariosLecionadosQuinta.contains(randomHorario)|| thiago.getHorasLecionadasQuinta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioTerceiroAno[randomHorario][randomDia] = "Sistemas Operacionais / Thiago";
                             thiago.horariosLecionadosQuinta.add(randomHorario);
@@ -1913,7 +2186,8 @@ public class Main {
                     }
                     if (randomDia == 4) {
                         if (thiago.horariosLecionadosSexta.contains(randomHorario)|| thiago.getHorasLecionadasSexta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioTerceiroAno[randomHorario][randomDia] = "Sistemas Operacionais / Thiago";
                             thiago.horariosLecionadosSexta.add(randomHorario);
@@ -1925,15 +2199,22 @@ public class Main {
             }
         }
         
+
         for (i = 0; i < bD.getAulasSemanais(); i++) {
             sucesso = false;
+            randomHorario = 0 + random.nextInt(hor);
+            randomDia = 0 + random.nextInt(dia);
             while (sucesso == false) {
-                randomHorario = 0 + random.nextInt(8);
-                randomDia = 0 + random.nextInt(5);
+                do{
+                    randomHorario = 0 + random.nextInt(hor);
+                    randomDia = 0 + random.nextInt(dia);  
+                }while((randomHorario<0 || randomHorario >7)||(randomDia<0 || randomDia >4));
                 while (matrizHorarioTerceiroAno[randomHorario][randomDia] == "Horário Livre") {
+                    
                     if (randomDia == 0) {
                         if (ailton.horariosLecionadosSegunda.contains(randomHorario) || ailton.getHorasLecionadasSegunda() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioTerceiroAno[randomHorario][randomDia] = "Banco De Dados / Ailton";
                             ailton.horariosLecionadosSegunda.add(randomHorario);
@@ -1943,7 +2224,8 @@ public class Main {
                     }
                     if (randomDia == 1) {
                         if (ailton.horariosLecionadosTerca.contains(randomHorario)|| ailton.getHorasLecionadasTerca() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioTerceiroAno[randomHorario][randomDia] = "Banco De Dados / Ailton";
                             ailton.horariosLecionadosTerca.add(randomHorario);
@@ -1954,7 +2236,8 @@ public class Main {
                     }
                     if (randomDia == 2) {
                         if (ailton.horariosLecionadosQuarta.contains(randomHorario)|| ailton.getHorasLecionadasQuarta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioTerceiroAno[randomHorario][randomDia] = "Banco De Dados / Ailton";
                             ailton.horariosLecionadosQuarta.add(randomHorario);
@@ -1964,7 +2247,8 @@ public class Main {
                     }
                     if (randomDia == 3) {
                         if (ailton.horariosLecionadosQuinta.contains(randomHorario)|| ailton.getHorasLecionadasQuinta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioTerceiroAno[randomHorario][randomDia] = "Banco De Dados / Ailton";
                             ailton.horariosLecionadosQuinta.add(randomHorario);
@@ -1974,7 +2258,8 @@ public class Main {
                     }
                     if (randomDia == 4) {
                         if (ailton.horariosLecionadosSexta.contains(randomHorario)|| ailton.getHorasLecionadasSexta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioTerceiroAno[randomHorario][randomDia] = "Banco De Dados / Ailton";
                             ailton.horariosLecionadosSexta.add(randomHorario);
@@ -1985,16 +2270,22 @@ public class Main {
                 }
             }
         }
-        
+
         for (i = 0; i < lingProg.getAulasSemanais(); i++) {
             sucesso = false;
+            randomHorario = 0 + random.nextInt(hor);
+            randomDia = 0 + random.nextInt(dia);
             while (sucesso == false) {
-                randomHorario = 0 + random.nextInt(8);
-                randomDia = 0 + random.nextInt(5);
+                do{
+                    randomHorario = 0 + random.nextInt(hor);
+                    randomDia = 0 + random.nextInt(dia);  
+                }while((randomHorario<0 || randomHorario >7)||(randomDia<0 || randomDia >4));
                 while (matrizHorarioTerceiroAno[randomHorario][randomDia] == "Horário Livre") {
+                    
                     if (randomDia == 0) {
                         if (brunoFaical.horariosLecionadosSegunda.contains(randomHorario) || brunoFaical.getHorasLecionadasSegunda() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioTerceiroAno[randomHorario][randomDia] = "Linguaguens de Programação / Bruno Faiçal";
                             brunoFaical.horariosLecionadosSegunda.add(randomHorario);
@@ -2004,7 +2295,8 @@ public class Main {
                     }
                     if (randomDia == 1) {
                         if (brunoFaical.horariosLecionadosTerca.contains(randomHorario)|| brunoFaical.getHorasLecionadasTerca() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioTerceiroAno[randomHorario][randomDia] = "Linguaguens de Programação / Bruno Faiçal";
                             brunoFaical.horariosLecionadosTerca.add(randomHorario);
@@ -2015,7 +2307,8 @@ public class Main {
                     }
                     if (randomDia == 2) {
                         if (brunoFaical.horariosLecionadosQuarta.contains(randomHorario)|| brunoFaical.getHorasLecionadasQuarta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioTerceiroAno[randomHorario][randomDia] = "Linguaguens de Programação / Bruno Faiçal";
                             brunoFaical.horariosLecionadosQuarta.add(randomHorario);
@@ -2025,7 +2318,8 @@ public class Main {
                     }
                     if (randomDia == 3) {
                         if (brunoFaical.horariosLecionadosQuinta.contains(randomHorario)|| brunoFaical.getHorasLecionadasQuinta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioTerceiroAno[randomHorario][randomDia] = "Linguaguens de Programação / Bruno Faiçal";
                             brunoFaical.horariosLecionadosQuinta.add(randomHorario);
@@ -2035,7 +2329,8 @@ public class Main {
                     }
                     if (randomDia == 4) {
                         if (brunoFaical.horariosLecionadosSexta.contains(randomHorario)|| brunoFaical.getHorasLecionadasSexta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioTerceiroAno[randomHorario][randomDia] = "Linguaguens de Programação / Bruno Faiçal";
                             brunoFaical.horariosLecionadosSexta.add(randomHorario);
@@ -2046,16 +2341,21 @@ public class Main {
                 }
             }
         }
-        
+
         for (i = 0; i < engSoftII.getAulasSemanais(); i++) {
             sucesso = false;
+            randomHorario = 0 + random.nextInt(hor);
+            randomDia = 0 + random.nextInt(dia);
             while (sucesso == false) {
-                randomHorario = 0 + random.nextInt(8);
-                randomDia = 0 + random.nextInt(5);
+                do{
+                    randomHorario = 0 + random.nextInt(hor);
+                    randomDia = 0 + random.nextInt(dia);  
+                }while((randomHorario<0 || randomHorario >7)||(randomDia<0 || randomDia >4));
                 while (matrizHorarioTerceiroAno[randomHorario][randomDia] == "Horário Livre") {
                     if (randomDia == 0) {
                         if (andre.horariosLecionadosSegunda.contains(randomHorario) || andre.getHorasLecionadasSegunda() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioTerceiroAno[randomHorario][randomDia] = "Engenharia de Software II / André Menolli";
                             andre.horariosLecionadosSegunda.add(randomHorario);
@@ -2065,7 +2365,8 @@ public class Main {
                     }
                     if (randomDia == 1) {
                         if (andre.horariosLecionadosTerca.contains(randomHorario)|| andre.getHorasLecionadasTerca() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioTerceiroAno[randomHorario][randomDia] = "Engenharia de Software II / André Menolli";
                             andre.horariosLecionadosTerca.add(randomHorario);
@@ -2076,7 +2377,8 @@ public class Main {
                     }
                     if (randomDia == 2) {
                         if (andre.horariosLecionadosQuarta.contains(randomHorario)|| andre.getHorasLecionadasQuarta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioTerceiroAno[randomHorario][randomDia] = "Engenharia de Software II / André Menolli";
                             andre.horariosLecionadosQuarta.add(randomHorario);
@@ -2086,7 +2388,8 @@ public class Main {
                     }
                     if (randomDia == 3) {
                         if (andre.horariosLecionadosQuinta.contains(randomHorario)|| andre.getHorasLecionadasQuinta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioTerceiroAno[randomHorario][randomDia] = "Engenharia de Software II / André Menolli";
                             andre.horariosLecionadosQuinta.add(randomHorario);
@@ -2096,7 +2399,8 @@ public class Main {
                     }
                     if (randomDia == 4) {
                         if (andre.horariosLecionadosSexta.contains(randomHorario)|| andre.getHorasLecionadasSexta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioTerceiroAno[randomHorario][randomDia] = "Engenharia de Software II / André Menolli";
                             andre.horariosLecionadosSexta.add(randomHorario);
@@ -2107,16 +2411,21 @@ public class Main {
                 }
             }
         }
-        
+
          for (i = 0; i < comp.getAulasSemanais(); i++) {
             sucesso = false;
+            randomHorario = 0 + random.nextInt(hor);
+            randomDia = 0 + random.nextInt(dia);
             while (sucesso == false) {
-                randomHorario = 0 + random.nextInt(8);
-                randomDia = 0 + random.nextInt(5);
+                do{
+                    randomHorario = 0 + random.nextInt(hor);
+                    randomDia = 0 + random.nextInt(dia);  
+                }while((randomHorario<0 || randomHorario >7)||(randomDia<0 || randomDia >4));
                 while (matrizHorarioTerceiroAno[randomHorario][randomDia] == "Horário Livre") {
                     if (randomDia == 0) {
                         if (wellington.horariosLecionadosSegunda.contains(randomHorario) || wellington.getHorasLecionadasSegunda() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioTerceiroAno[randomHorario][randomDia] = "Compiladores / Wellington Dellamura";
                             wellington.horariosLecionadosSegunda.add(randomHorario);
@@ -2126,7 +2435,8 @@ public class Main {
                     }
                     if (randomDia == 1) {
                         if (wellington.horariosLecionadosTerca.contains(randomHorario)|| wellington.getHorasLecionadasTerca() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioTerceiroAno[randomHorario][randomDia] = "Compiladores / Wellington Dellamura";
                             wellington.horariosLecionadosTerca.add(randomHorario);
@@ -2137,7 +2447,8 @@ public class Main {
                     }
                     if (randomDia == 2) {
                         if (wellington.horariosLecionadosQuarta.contains(randomHorario)|| wellington.getHorasLecionadasQuarta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioTerceiroAno[randomHorario][randomDia] = "Compiladores / Wellington Dellamura";
                             wellington.horariosLecionadosQuarta.add(randomHorario);
@@ -2147,7 +2458,8 @@ public class Main {
                     }
                     if (randomDia == 3) {
                         if (wellington.horariosLecionadosQuinta.contains(randomHorario)|| wellington.getHorasLecionadasQuinta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioTerceiroAno[randomHorario][randomDia] = "Compiladores / Wellington Dellamura";
                             wellington.horariosLecionadosQuinta.add(randomHorario);
@@ -2157,7 +2469,8 @@ public class Main {
                     }
                     if (randomDia == 4) {
                         if (wellington.horariosLecionadosSexta.contains(randomHorario)|| wellington.getHorasLecionadasSexta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioTerceiroAno[randomHorario][randomDia] = "Compiladores / Wellington Dellamura";
                             wellington.horariosLecionadosSexta.add(randomHorario);
@@ -2168,16 +2481,21 @@ public class Main {
                 }
             }
         }
-        
+
          for (i = 0; i < iA.getAulasSemanais(); i++) {
             sucesso = false;
+            randomHorario = 0 + random.nextInt(hor);
+            randomDia = 0 + random.nextInt(dia);
             while (sucesso == false) {
-                randomHorario = 0 + random.nextInt(8);
-                randomDia = 0 + random.nextInt(5);
+                do{
+                    randomHorario = 0 + random.nextInt(hor);
+                    randomDia = 0 + random.nextInt(dia);  
+                }while((randomHorario<0 || randomHorario >7)||(randomDia<0 || randomDia >4));
                 while (matrizHorarioTerceiroAno[randomHorario][randomDia] == "Horário Livre") {
                     if (randomDia == 0) {
                         if (glauco.horariosLecionadosSegunda.contains(randomHorario) || glauco.getHorasLecionadasSegunda() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioTerceiroAno[randomHorario][randomDia] = "Inteligência Artificial / Glauco";
                             glauco.horariosLecionadosSegunda.add(randomHorario);
@@ -2187,7 +2505,8 @@ public class Main {
                     }
                     if (randomDia == 1) {
                         if (glauco.horariosLecionadosTerca.contains(randomHorario)|| glauco.getHorasLecionadasTerca() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioTerceiroAno[randomHorario][randomDia] = "Inteligência Artificial / Glauco";
                             glauco.horariosLecionadosTerca.add(randomHorario);
@@ -2198,7 +2517,8 @@ public class Main {
                     }
                     if (randomDia == 2) {
                         if (glauco.horariosLecionadosQuarta.contains(randomHorario)|| glauco.getHorasLecionadasQuarta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioTerceiroAno[randomHorario][randomDia] = "Inteligência Artificial / Glauco";
                             glauco.horariosLecionadosQuarta.add(randomHorario);
@@ -2208,7 +2528,8 @@ public class Main {
                     }
                     if (randomDia == 3) {
                         if (glauco.horariosLecionadosQuinta.contains(randomHorario)|| glauco.getHorasLecionadasQuinta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioTerceiroAno[randomHorario][randomDia] = "Inteligência Artificial / Glauco";
                             glauco.horariosLecionadosQuinta.add(randomHorario);
@@ -2218,7 +2539,8 @@ public class Main {
                     }
                     if (randomDia == 4) {
                         if (glauco.horariosLecionadosSexta.contains(randomHorario)|| glauco.getHorasLecionadasSexta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioTerceiroAno[randomHorario][randomDia] = "Inteligência Artificial / Glauco";
                             glauco.horariosLecionadosSexta.add(randomHorario);
@@ -2229,16 +2551,23 @@ public class Main {
                 }
             }
         }
-         
+                    
+
          for (i = 0; i < redes.getAulasSemanais(); i++) {
             sucesso = false;
+            randomHorario = 0 + random.nextInt(hor);
+            randomDia = 0 + random.nextInt(dia);
             while (sucesso == false) {
-                randomHorario = 0 + random.nextInt(8);
-                randomDia = 0 + random.nextInt(5);
+                do{
+                    randomHorario = 0 + random.nextInt(hor);
+                    randomDia = 0 + random.nextInt(dia);  
+                }while((randomHorario<0 || randomHorario >7)||(randomDia<0 || randomDia >4));
                 while (matrizHorarioTerceiroAno[randomHorario][randomDia] == "Horário Livre") {
+                    
                     if (randomDia == 0) {
                         if (ricardo.horariosLecionadosSegunda.contains(randomHorario) || ricardo.getHorasLecionadasSegunda() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioTerceiroAno[randomHorario][randomDia] = "Redes / Ricardo";
                             ricardo.horariosLecionadosSegunda.add(randomHorario);
@@ -2248,7 +2577,8 @@ public class Main {
                     }
                     if (randomDia == 1) {
                         if (ricardo.horariosLecionadosTerca.contains(randomHorario)|| ricardo.getHorasLecionadasTerca() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioTerceiroAno[randomHorario][randomDia] = "Redes / Ricardo";
                             ricardo.horariosLecionadosTerca.add(randomHorario);
@@ -2259,7 +2589,8 @@ public class Main {
                     }
                     if (randomDia == 2) {
                         if (ricardo.horariosLecionadosQuarta.contains(randomHorario)|| ricardo.getHorasLecionadasQuarta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioTerceiroAno[randomHorario][randomDia] = "Redes / Ricardo";
                             ricardo.horariosLecionadosQuarta.add(randomHorario);
@@ -2269,7 +2600,8 @@ public class Main {
                     }
                     if (randomDia == 3) {
                         if (ricardo.horariosLecionadosQuinta.contains(randomHorario)|| ricardo.getHorasLecionadasQuinta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioTerceiroAno[randomHorario][randomDia] = "Redes / Ricardo";
                             ricardo.horariosLecionadosQuinta.add(randomHorario);
@@ -2279,7 +2611,8 @@ public class Main {
                     }
                     if (randomDia == 4) {
                         if (ricardo.horariosLecionadosSexta.contains(randomHorario)|| ricardo.getHorasLecionadasSexta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioTerceiroAno[randomHorario][randomDia] = "Redes / Ricardo";
                             ricardo.horariosLecionadosSexta.add(randomHorario);
@@ -2290,24 +2623,29 @@ public class Main {
                 }
             }
         }
+         
     }
 
     public static void montarHorarioQuartoAno() {
-        String matrizHorarioQuartoAno[][] = new String[8][5];
         for (i = 0; i < 8; i++) {
-            for (j = 0; i < 5; i++) {
-                matrizHorarioQuartoAno[i][j] = "Horario Livre";
+            for (j = 0; j < 5; j++) {
+                matrizHorarioQuartoAno[i][j] = "Horário Livre";
             }
         }
         for (i = 0; i < pratEGerenc.getAulasSemanais(); i++) {
             sucesso = false;
+            randomHorario = 0 + random.nextInt(hor);
+            randomDia = 0 + random.nextInt(dia);
             while (sucesso == false) {
-                randomHorario = 0 + random.nextInt(8);
-                randomDia = 0 + random.nextInt(5);
+                do{
+                    randomHorario = 0 + random.nextInt(hor);
+                    randomDia = 0 + random.nextInt(dia);  
+                }while((randomHorario<0 || randomHorario >7)||(randomDia<0 || randomDia >4));
                 while (matrizHorarioQuartoAno[randomHorario][randomDia] == "Horário Livre") {
                     if (randomDia == 0) {
                         if (daniela.horariosLecionadosSegunda.contains(randomHorario) || daniela.getHorasLecionadasSegunda() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioQuartoAno[randomHorario][randomDia] = "Prática e Gerenciamento de Projetos / Daniela";
                             daniela.horariosLecionadosSegunda.add(randomHorario);
@@ -2317,7 +2655,8 @@ public class Main {
                     }
                     if (randomDia == 1) {
                         if (daniela.horariosLecionadosTerca.contains(randomHorario)|| daniela.getHorasLecionadasTerca() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioQuartoAno[randomHorario][randomDia] = "Prática e Gerenciamento de Projetos / Daniela";
                             daniela.horariosLecionadosTerca.add(randomHorario);
@@ -2328,7 +2667,8 @@ public class Main {
                     }
                     if (randomDia == 2) {
                         if (daniela.horariosLecionadosQuarta.contains(randomHorario)|| daniela.getHorasLecionadasQuarta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioQuartoAno[randomHorario][randomDia] = "Prática e Gerenciamento de Projetos / Daniela";
                             daniela.horariosLecionadosQuarta.add(randomHorario);
@@ -2338,7 +2678,8 @@ public class Main {
                     }
                     if (randomDia == 3) {
                         if (daniela.horariosLecionadosQuinta.contains(randomHorario)|| daniela.getHorasLecionadasQuinta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioQuartoAno[randomHorario][randomDia] = "Prática e Gerenciamento de Projetos / Daniela";
                             daniela.horariosLecionadosQuinta.add(randomHorario);
@@ -2348,7 +2689,8 @@ public class Main {
                     }
                     if (randomDia == 4) {
                         if (daniela.horariosLecionadosSexta.contains(randomHorario)|| daniela.getHorasLecionadasSexta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioQuartoAno[randomHorario][randomDia] = "Prática e Gerenciamento de Projetos / Daniela";
                             daniela.horariosLecionadosSexta.add(randomHorario);
@@ -2362,13 +2704,18 @@ public class Main {
         
         for (i = 0; i < sistDistribuidos.getAulasSemanais(); i++) {
             sucesso = false;
+            randomHorario = 0 + random.nextInt(hor);
+            randomDia = 0 + random.nextInt(dia);
             while (sucesso == false) {
-                randomHorario = 0 + random.nextInt(8);
-                randomDia = 0 + random.nextInt(5);
+                do{
+                    randomHorario = 0 + random.nextInt(hor);
+                    randomDia = 0 + random.nextInt(dia);  
+                }while((randomHorario<0 || randomHorario >7)||(randomDia<0 || randomDia >4));
                 while (matrizHorarioQuartoAno[randomHorario][randomDia] == "Horário Livre") {
                     if (randomDia == 0) {
                         if (ricardo.horariosLecionadosSegunda.contains(randomHorario) || ricardo.getHorasLecionadasSegunda() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioQuartoAno[randomHorario][randomDia] = "Sistemas Distribuidos / Ricardo";
                             ricardo.horariosLecionadosSegunda.add(randomHorario);
@@ -2378,7 +2725,8 @@ public class Main {
                     }
                     if (randomDia == 1) {
                         if (ricardo.horariosLecionadosTerca.contains(randomHorario)|| ricardo.getHorasLecionadasTerca() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioQuartoAno[randomHorario][randomDia] = "Sistemas Distribuidos / Ricardo";
                             ricardo.horariosLecionadosTerca.add(randomHorario);
@@ -2389,7 +2737,8 @@ public class Main {
                     }
                     if (randomDia == 2) {
                         if (ricardo.horariosLecionadosQuarta.contains(randomHorario)|| ricardo.getHorasLecionadasQuarta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioQuartoAno[randomHorario][randomDia] = "Sistemas Distribuidos / Ricardo";
                             ricardo.horariosLecionadosQuarta.add(randomHorario);
@@ -2399,7 +2748,8 @@ public class Main {
                     }
                     if (randomDia == 3) {
                         if (ricardo.horariosLecionadosQuinta.contains(randomHorario)|| ricardo.getHorasLecionadasQuinta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioQuartoAno[randomHorario][randomDia] = "Sistemas Distribuidos / Ricardo";
                             ricardo.horariosLecionadosQuinta.add(randomHorario);
@@ -2409,7 +2759,8 @@ public class Main {
                     }
                     if (randomDia == 4) {
                         if (ricardo.horariosLecionadosSexta.contains(randomHorario)|| ricardo.getHorasLecionadasSexta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioQuartoAno[randomHorario][randomDia] = "Sistemas Distribuidos / Ricardo";
                             ricardo.horariosLecionadosSexta.add(randomHorario);
@@ -2423,13 +2774,19 @@ public class Main {
         
         for (i = 0; i < engSoftIII.getAulasSemanais(); i++) {
             sucesso = false;
+            randomHorario = 0 + random.nextInt(hor);
+            randomDia = 0 + random.nextInt(dia);
+            
             while (sucesso == false) {
-                randomHorario = 0 + random.nextInt(8);
-                randomDia = 0 + random.nextInt(5);
+                do{
+                    randomHorario = 0 + random.nextInt(hor);
+                    randomDia = 0 + random.nextInt(dia);  
+                }while((randomHorario<0 || randomHorario >7)||(randomDia<0 || randomDia >4));
                 while (matrizHorarioQuartoAno[randomHorario][randomDia] == "Horário Livre") {
                     if (randomDia == 0) {
                         if (fabio.horariosLecionadosSegunda.contains(randomHorario) || fabio.getHorasLecionadasSegunda() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioQuartoAno[randomHorario][randomDia] = "Engenharia de Software III / Fabio";
                             fabio.horariosLecionadosSegunda.add(randomHorario);
@@ -2439,7 +2796,8 @@ public class Main {
                     }
                     if (randomDia == 1) {
                         if (fabio.horariosLecionadosTerca.contains(randomHorario)|| fabio.getHorasLecionadasTerca() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioQuartoAno[randomHorario][randomDia] = "Engenharia de Software III / Fabio";
                             fabio.horariosLecionadosTerca.add(randomHorario);
@@ -2450,7 +2808,8 @@ public class Main {
                     }
                     if (randomDia == 2) {
                         if (fabio.horariosLecionadosQuarta.contains(randomHorario)|| fabio.getHorasLecionadasQuarta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioQuartoAno[randomHorario][randomDia] = "Engenharia de Software III / Fabio";
                             fabio.horariosLecionadosQuarta.add(randomHorario);
@@ -2460,7 +2819,8 @@ public class Main {
                     }
                     if (randomDia == 3) {
                         if (fabio.horariosLecionadosQuinta.contains(randomHorario)|| fabio.getHorasLecionadasQuinta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioQuartoAno[randomHorario][randomDia] = "Engenharia de Software III / Fabio";
                             fabio.horariosLecionadosQuinta.add(randomHorario);
@@ -2470,7 +2830,8 @@ public class Main {
                     }
                     if (randomDia == 4) {
                         if (fabio.horariosLecionadosSexta.contains(randomHorario)|| fabio.getHorasLecionadasSexta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioQuartoAno[randomHorario][randomDia] = "Engenharia de Software III / Fabio";
                             fabio.horariosLecionadosSexta.add(randomHorario);
@@ -2484,13 +2845,18 @@ public class Main {
         
         for (i = 0; i < compGraf.getAulasSemanais(); i++) {
             sucesso = false;
+            randomHorario = 0 + random.nextInt(hor);
+            randomDia = 0 + random.nextInt(dia);
             while (sucesso == false) {
-                randomHorario = 0 + random.nextInt(8);
-                randomDia = 0 + random.nextInt(5);
+                do{
+                    randomHorario = 0 + random.nextInt(hor);
+                    randomDia = 0 + random.nextInt(dia);  
+                }while((randomHorario<0 || randomHorario >7)||(randomDia<0 || randomDia >4));
                 while (matrizHorarioQuartoAno[randomHorario][randomDia] == "Horário Livre") {
                     if (randomDia == 0) {
                         if (wellington.horariosLecionadosSegunda.contains(randomHorario) || wellington.getHorasLecionadasSegunda() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioQuartoAno[randomHorario][randomDia] = "Computação Gráfica / Wellington Dellamura";
                             wellington.horariosLecionadosSegunda.add(randomHorario);
@@ -2500,7 +2866,8 @@ public class Main {
                     }
                     if (randomDia == 1) {
                         if (wellington.horariosLecionadosTerca.contains(randomHorario)|| wellington.getHorasLecionadasTerca() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioQuartoAno[randomHorario][randomDia] = "Computação Gráfica / Wellington Dellamura";
                             wellington.horariosLecionadosTerca.add(randomHorario);
@@ -2511,7 +2878,8 @@ public class Main {
                     }
                     if (randomDia == 2) {
                         if (wellington.horariosLecionadosQuarta.contains(randomHorario)|| wellington.getHorasLecionadasQuarta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioQuartoAno[randomHorario][randomDia] = "Computação Gráfica / Wellington Dellamura";
                             wellington.horariosLecionadosQuarta.add(randomHorario);
@@ -2521,7 +2889,8 @@ public class Main {
                     }
                     if (randomDia == 3) {
                         if (wellington.horariosLecionadosQuinta.contains(randomHorario)|| wellington.getHorasLecionadasQuinta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioQuartoAno[randomHorario][randomDia] = "Computação Gráfica / Wellington Dellamura";
                             wellington.horariosLecionadosQuinta.add(randomHorario);
@@ -2531,7 +2900,8 @@ public class Main {
                     }
                     if (randomDia == 4) {
                         if (wellington.horariosLecionadosSexta.contains(randomHorario)|| wellington.getHorasLecionadasSexta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioQuartoAno[randomHorario][randomDia] = "Computação Gráfica / Wellington Dellamura";
                             wellington.horariosLecionadosSexta.add(randomHorario);
@@ -2545,13 +2915,18 @@ public class Main {
         
         for (i = 0; i < compSimbolica.getAulasSemanais(); i++) {
             sucesso = false;
+            randomHorario = 0 + random.nextInt(hor);
+            randomDia = 0 + random.nextInt(dia);
             while (sucesso == false) {
-                randomHorario = 0 + random.nextInt(8);
-                randomDia = 0 + random.nextInt(5);
+                do{
+                    randomHorario = 0 + random.nextInt(hor);
+                    randomDia = 0 + random.nextInt(dia);  
+                }while((randomHorario<0 || randomHorario >7)||(randomDia<0 || randomDia >4));
                 while (matrizHorarioQuartoAno[randomHorario][randomDia] == "Horário Livre") {
                     if (randomDia == 0) {
                         if (luizFernando.horariosLecionadosSegunda.contains(randomHorario) || luizFernando.getHorasLecionadasSegunda() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioQuartoAno[randomHorario][randomDia] = "Computação Simbólica / Luiz Fernando";
                             luizFernando.horariosLecionadosSegunda.add(randomHorario);
@@ -2561,7 +2936,8 @@ public class Main {
                     }
                     if (randomDia == 1) {
                         if (luizFernando.horariosLecionadosTerca.contains(randomHorario)|| luizFernando.getHorasLecionadasTerca() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioQuartoAno[randomHorario][randomDia] = "Computação Simbólica / Luiz Fernando";
                             luizFernando.horariosLecionadosTerca.add(randomHorario);
@@ -2572,7 +2948,8 @@ public class Main {
                     }
                     if (randomDia == 2) {
                         if (luizFernando.horariosLecionadosQuarta.contains(randomHorario)|| luizFernando.getHorasLecionadasQuarta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioQuartoAno[randomHorario][randomDia] = "Computação Simbólica / Luiz Fernando";
                             luizFernando.horariosLecionadosQuarta.add(randomHorario);
@@ -2582,7 +2959,8 @@ public class Main {
                     }
                     if (randomDia == 3) {
                         if (luizFernando.horariosLecionadosQuinta.contains(randomHorario)|| luizFernando.getHorasLecionadasQuinta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioQuartoAno[randomHorario][randomDia] = "Computação Simbólica / Luiz Fernando";
                             luizFernando.horariosLecionadosQuinta.add(randomHorario);
@@ -2592,7 +2970,8 @@ public class Main {
                     }
                     if (randomDia == 4) {
                         if (luizFernando.horariosLecionadosSexta.contains(randomHorario)|| luizFernando.getHorasLecionadasSexta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioQuartoAno[randomHorario][randomDia] = "Computação Simbólica / Luiz Fernando";
                             luizFernando.horariosLecionadosSexta.add(randomHorario);
@@ -2606,13 +2985,18 @@ public class Main {
         
         for (i = 0; i < empreendedorismo.getAulasSemanais(); i++) {
             sucesso = false;
+            randomHorario = 0 + random.nextInt(hor);
+            randomDia = 0 + random.nextInt(dia);
             while (sucesso == false) {
-                randomHorario = 0 + random.nextInt(8);
-                randomDia = 0 + random.nextInt(5);
+                do{
+                    randomHorario = 0 + random.nextInt(hor);
+                    randomDia = 0 + random.nextInt(dia);  
+                }while((randomHorario<0 || randomHorario >7)||(randomDia<0 || randomDia >4));
                 while (matrizHorarioQuartoAno[randomHorario][randomDia] == "Horário Livre") {
                     if (randomDia == 0) {
                         if (carlosHenrique.horariosLecionadosSegunda.contains(randomHorario) || carlosHenrique.getHorasLecionadasSegunda() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioQuartoAno[randomHorario][randomDia] = "Empreendedorismo / Carlos Henrique";
                             carlosHenrique.horariosLecionadosSegunda.add(randomHorario);
@@ -2622,7 +3006,8 @@ public class Main {
                     }
                     if (randomDia == 1) {
                         if (carlosHenrique.horariosLecionadosTerca.contains(randomHorario)|| carlosHenrique.getHorasLecionadasTerca() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioQuartoAno[randomHorario][randomDia] = "Empreendedorismo / Carlos Henrique";
                             carlosHenrique.horariosLecionadosTerca.add(randomHorario);
@@ -2633,7 +3018,8 @@ public class Main {
                     }
                     if (randomDia == 2) {
                         if (carlosHenrique.horariosLecionadosQuarta.contains(randomHorario)|| carlosHenrique.getHorasLecionadasQuarta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioQuartoAno[randomHorario][randomDia] = "Empreendedorismo / Carlos Henrique";
                             carlosHenrique.horariosLecionadosQuarta.add(randomHorario);
@@ -2643,7 +3029,8 @@ public class Main {
                     }
                     if (randomDia == 3) {
                         if (carlosHenrique.horariosLecionadosQuinta.contains(randomHorario)|| carlosHenrique.getHorasLecionadasQuinta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioQuartoAno[randomHorario][randomDia] = "Empreendedorismo / Carlos Henrique";
                             carlosHenrique.horariosLecionadosQuinta.add(randomHorario);
@@ -2653,7 +3040,8 @@ public class Main {
                     }
                     if (randomDia == 4) {
                         if (carlosHenrique.horariosLecionadosSexta.contains(randomHorario)|| carlosHenrique.getHorasLecionadasSexta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioQuartoAno[randomHorario][randomDia] = "Empreendedorismo / Carlos Henrique";
                             carlosHenrique.horariosLecionadosSexta.add(randomHorario);
@@ -2667,13 +3055,18 @@ public class Main {
         
         for (i = 0; i < segEAuditoria.getAulasSemanais(); i++) {
             sucesso = false;
+            randomHorario = 0 + random.nextInt(hor);
+            randomDia = 0 + random.nextInt(dia);
             while (sucesso == false) {
-                randomHorario = 0 + random.nextInt(8);
-                randomDia = 0 + random.nextInt(5);
+                do{
+                    randomHorario = 0 + random.nextInt(hor);
+                    randomDia = 0 + random.nextInt(dia);  
+                }while((randomHorario<0 || randomHorario >7)||(randomDia<0 || randomDia >4));
                 while (matrizHorarioQuartoAno[randomHorario][randomDia] == "Horário Livre") {
                     if (randomDia == 0) {
                         if (carlosEduardo.horariosLecionadosSegunda.contains(randomHorario) || carlosEduardo.getHorasLecionadasSegunda() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioQuartoAno[randomHorario][randomDia] = "Segurança e Auditoria de Sistemas / Carlos Eduardo";
                             carlosEduardo.horariosLecionadosSegunda.add(randomHorario);
@@ -2683,7 +3076,8 @@ public class Main {
                     }
                     if (randomDia == 1) {
                         if (carlosEduardo.horariosLecionadosTerca.contains(randomHorario)|| carlosEduardo.getHorasLecionadasTerca() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioQuartoAno[randomHorario][randomDia] = "Segurança e Auditoria de Sistemas / Carlos Eduardo";
                             carlosEduardo.horariosLecionadosTerca.add(randomHorario);
@@ -2694,7 +3088,8 @@ public class Main {
                     }
                     if (randomDia == 2) {
                         if (carlosEduardo.horariosLecionadosQuarta.contains(randomHorario)|| carlosEduardo.getHorasLecionadasQuarta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioQuartoAno[randomHorario][randomDia] = "Segurança e Auditoria de Sistemas / Carlos Eduardo";
                             carlosEduardo.horariosLecionadosQuarta.add(randomHorario);
@@ -2704,7 +3099,8 @@ public class Main {
                     }
                     if (randomDia == 3) {
                         if (carlosEduardo.horariosLecionadosQuinta.contains(randomHorario)|| carlosEduardo.getHorasLecionadasQuinta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioQuartoAno[randomHorario][randomDia] = "Segurança e Auditoria de Sistemas / Carlos Eduardo";
                             carlosEduardo.horariosLecionadosQuinta.add(randomHorario);
@@ -2714,7 +3110,8 @@ public class Main {
                     }
                     if (randomDia == 4) {
                         if (carlosEduardo.horariosLecionadosSexta.contains(randomHorario)|| carlosEduardo.getHorasLecionadasSexta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioQuartoAno[randomHorario][randomDia] = "Segurança e Auditoria de Sistemas / Carlos Eduardo";
                             carlosEduardo.horariosLecionadosSexta.add(randomHorario);
@@ -2728,13 +3125,18 @@ public class Main {
         
         for (i = 0; i < interfaceHM.getAulasSemanais(); i++) {
             sucesso = false;
+            randomHorario = 0 + random.nextInt(hor);
+            randomDia = 0 + random.nextInt(dia);
             while (sucesso == false) {
-                randomHorario = 0 + random.nextInt(8);
-                randomDia = 0 + random.nextInt(5);
+                do{
+                    randomHorario = 0 + random.nextInt(hor);
+                    randomDia = 0 + random.nextInt(dia);  
+                }while((randomHorario<0 || randomHorario >7)||(randomDia<0 || randomDia >4));
                 while (matrizHorarioQuartoAno[randomHorario][randomDia] == "Horário Livre") {
                     if (randomDia == 0) {
                         if (thiago.horariosLecionadosSegunda.contains(randomHorario) || thiago.getHorasLecionadasSegunda() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioQuartoAno[randomHorario][randomDia] = "Interface Homem Máquina / Thiago";
                             thiago.horariosLecionadosSegunda.add(randomHorario);
@@ -2744,7 +3146,8 @@ public class Main {
                     }
                     if (randomDia == 1) {
                         if (thiago.horariosLecionadosTerca.contains(randomHorario)|| thiago.getHorasLecionadasTerca() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioQuartoAno[randomHorario][randomDia] = "Interface Homem Máquina / Thiago";
                             thiago.horariosLecionadosTerca.add(randomHorario);
@@ -2755,7 +3158,8 @@ public class Main {
                     }
                     if (randomDia == 2) {
                         if (thiago.horariosLecionadosQuarta.contains(randomHorario)|| thiago.getHorasLecionadasQuarta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioQuartoAno[randomHorario][randomDia] = "Interface Homem Máquina / Thiago";
                             thiago.horariosLecionadosQuarta.add(randomHorario);
@@ -2765,7 +3169,8 @@ public class Main {
                     }
                     if (randomDia == 3) {
                         if (thiago.horariosLecionadosQuinta.contains(randomHorario)|| thiago.getHorasLecionadasQuinta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioQuartoAno[randomHorario][randomDia] = "Interface Homem Máquina / Thiago";
                             thiago.horariosLecionadosQuinta.add(randomHorario);
@@ -2775,7 +3180,8 @@ public class Main {
                     }
                     if (randomDia == 4) {
                         if (thiago.horariosLecionadosSexta.contains(randomHorario)|| thiago.getHorasLecionadasSexta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioQuartoAno[randomHorario][randomDia] = "Interface Homem Máquina / Thiago";
                             thiago.horariosLecionadosSexta.add(randomHorario);
@@ -2789,13 +3195,18 @@ public class Main {
         
         for (i = 0; i < informaticaEEducacao.getAulasSemanais(); i++) {
             sucesso = false;
+            randomHorario = 0 + random.nextInt(hor);
+            randomDia = 0 + random.nextInt(dia);
             while (sucesso == false) {
-                randomHorario = 0 + random.nextInt(8);
-                randomDia = 0 + random.nextInt(5);
+                do{
+                    randomHorario = 0 + random.nextInt(hor);
+                    randomDia = 0 + random.nextInt(dia);  
+                }while((randomHorario<0 || randomHorario >7)||(randomDia<0 || randomDia >4));
                 while (matrizHorarioQuartoAno[randomHorario][randomDia] == "Horário Livre") {
                     if (randomDia == 0) {
                         if (fabio.horariosLecionadosSegunda.contains(randomHorario) || fabio.getHorasLecionadasSegunda() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioQuartoAno[randomHorario][randomDia] = "Informática e Educação / Fabio";
                             fabio.horariosLecionadosSegunda.add(randomHorario);
@@ -2805,7 +3216,8 @@ public class Main {
                     }
                     if (randomDia == 1) {
                         if (fabio.horariosLecionadosTerca.contains(randomHorario)|| fabio.getHorasLecionadasTerca() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioQuartoAno[randomHorario][randomDia] = "Informática e Educação / Fabio";
                             fabio.horariosLecionadosTerca.add(randomHorario);
@@ -2816,7 +3228,8 @@ public class Main {
                     }
                     if (randomDia == 2) {
                         if (fabio.horariosLecionadosQuarta.contains(randomHorario)|| fabio.getHorasLecionadasQuarta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioQuartoAno[randomHorario][randomDia] = "Informática e Educação / Fabio";
                             fabio.horariosLecionadosQuarta.add(randomHorario);
@@ -2826,7 +3239,8 @@ public class Main {
                     }
                     if (randomDia == 3) {
                         if (fabio.horariosLecionadosQuinta.contains(randomHorario)|| fabio.getHorasLecionadasQuinta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioQuartoAno[randomHorario][randomDia] = "Informática e Educação / Fabio";
                             fabio.horariosLecionadosQuinta.add(randomHorario);
@@ -2836,7 +3250,8 @@ public class Main {
                     }
                     if (randomDia == 4) {
                         if (fabio.horariosLecionadosSexta.contains(randomHorario)|| fabio.getHorasLecionadasSexta() >= 8) {
-
+                            randomHorario = 0 + random.nextInt(hor);
+                            randomDia = 0 + random.nextInt(dia);
                         } else {
                             matrizHorarioQuartoAno[randomHorario][randomDia] = "Informática e Educação / Fabio";
                             fabio.horariosLecionadosSexta.add(randomHorario);

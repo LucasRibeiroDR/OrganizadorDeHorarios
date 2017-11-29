@@ -33,7 +33,7 @@ public class Turma {
     }
     
     public void pedirQtdAlunos(String ano){
-        Scanner teclado = new Scanner(System.in);
+        /*Scanner teclado = new Scanner(System.in);
         System.out.println("Digite a quantidade de alunos do "+ano+" ano: ");
         setQtdAlunos(teclado.nextInt());
         while(this.getQtdAlunos() <= 0 || this.getQtdAlunos() > 50){
@@ -42,10 +42,8 @@ public class Turma {
             }
         }
     
-    public void inicializar(){
-        
-        
+    
+    
+    */
     }
-    
-    
     }
